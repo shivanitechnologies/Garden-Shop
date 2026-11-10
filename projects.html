@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects | VERDANT</title>
+    <meta name="description" content="Explore premium garden and landscape projects by VERDANT." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-theme="light">
+    <header class="site-header">
+      <div class="nav-wrap">
+        <a class="brand" href="index.html" aria-label="VERDANT home">
+          <span class="logo-mark" aria-hidden="true"></span>
+          <span class="brand-text"><strong>VERDANT</strong><span>Garden &amp; Landscape Studio</span></span>
+        </a>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="garden-design.html">Garden Design</a>
+          <a href="lawn-care.html">Lawn Care</a>
+          <a href="projects.html" class="active">Our Projects</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="contact.html">Contact</a>
+          <a href="dashboard.html">Dashboard</a>
+        </nav>
+        <div class="nav-actions">
+          <button id="theme-toggle" class="icon-btn" aria-label="Toggle theme">🌙</button>
+          <button id="dir-toggle" class="icon-btn" aria-label="Toggle RTL">RTL</button>
+          <button class="mobile-toggle icon-btn" aria-label="Open menu">☰</button>
+          <a class="btn btn-primary" href="contact.html">Book a Consultation</a>
+          <a class="btn btn-secondary" href="dashboard.html">Login</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="shell">
+          <div>
+            <span class="kicker">Our projects</span>
+            <h1>Elegant landscapes that deliver lasting atmosphere.</h1>
+            <p>Each project blends horticultural expertise, architectural calm and functional ease to create outdoor spaces with lasting presence.</p>
+          </div>
+          <div class="image-frame">
+            <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1200&q=80" alt="Project showcase" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="project-filters" role="group" aria-label="Filter projects">
+            <button type="button" class="project-filter is-active" data-filter="all" aria-pressed="true">All projects</button>
+            <button type="button" class="project-filter" data-filter="residential" aria-pressed="false">Residential Gardens</button>
+            <button type="button" class="project-filter" data-filter="commercial" aria-pressed="false">Commercial</button>
+            <button type="button" class="project-filter" data-filter="modern" aria-pressed="false">Modern Gardens</button>
+            <button type="button" class="project-filter" data-filter="backyard" aria-pressed="false">Backyard Transformations</button>
+            <button type="button" class="project-filter" data-filter="vertical" aria-pressed="false">Vertical Gardens</button>
+            <button type="button" class="project-filter" data-filter="outdoor-living" aria-pressed="false">Outdoor Living</button>
+          </div>
+          <div class="project-grid">
+            <article class="project-card" data-category="residential backyard">
+              <div class="image-wrap"><img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=900&q=80" alt="Residential project" /></div>
+              <div class="content"><span class="badge">Residential</span><h3>Willow Crest Courtyard</h3><p>Layered planting and stone textures turned a simple courtyard into a serene retreat.</p><small class="project-location">Location: Willow District (placeholder)</small><a class="project-link" href="contact.html">Discuss a similar garden ↗</a></div>
+            </article>
+            <article class="project-card" data-category="commercial outdoor-living">
+              <div class="image-wrap"><img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=900&q=80" alt="Commercial project" /></div>
+              <div class="content"><span class="badge">Commercial</span><h3>Harbor View Offices</h3><p>A welcoming envelope of greenery designed for brand identity and calm hospitality.</p><small class="project-location">Location: Harbor Quarter (placeholder)</small><a class="project-link" href="contact.html">Discuss a similar garden ↗</a></div>
+            </article>
+            <article class="project-card" data-category="modern residential">
+              <div class="image-wrap"><img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=900&q=80" alt="Modern garden project" /></div>
+              <div class="content"><span class="badge">Modern</span><h3>Oak &amp; Stone Garden</h3><p>Minimal forms and botanical interest created a quiet premium mood.</p><small class="project-location">Location: North Ridge (placeholder)</small><a class="project-link" href="contact.html">Discuss a similar garden ↗</a></div>
+            </article>
+            <article class="project-card" data-category="residential outdoor-living">
+              <div class="image-wrap"><img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=900&q=80" alt="Luxury garden project" /></div>
+              <div class="content"><span class="badge">Luxury</span><h3>Grove Residence</h3><p>Elegant layered landscaping and lighting designed to complement a contemporary villa.</p><small class="project-location">Location: Grove Hill (placeholder)</small><a class="project-link" href="contact.html">Discuss a similar garden ↗</a></div>
+            </article>
+            <article class="project-card" data-category="backyard vertical">
+              <div class="image-wrap"><img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&w=900&q=80" alt="Garden restoration" /></div>
+              <div class="content"><span class="badge">Restoration</span><h3>Riverbend Renewal</h3><p>We restored an aging landscape into a lush, sustainable outdoor sanctuary.</p><small class="project-location">Location: Riverbend (placeholder)</small><a class="project-link" href="contact.html">Discuss a similar garden ↗</a></div>
+            </article>
+            <article class="project-card" data-category="outdoor-living modern">
+              <div class="image-wrap"><img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=900&q=80" alt="Outdoor living project" /></div>
+              <div class="content"><span class="badge">Outdoor Living</span><h3>Sunset Terrace</h3><p>Curated focal plants and seating zones turned a terrace into a social destination.</p><small class="project-location">Location: West Terrace (placeholder)</small><a class="project-link" href="contact.html">Discuss a similar garden ↗</a></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section project-comparison-section">
+        <div class="container">
+          <div class="section-head"><span class="kicker">The transformation</span><h2>See the potential in every patch of ground.</h2><p>Drag the divider to compare a starting point with the finished landscape.</p></div>
+          <div class="slider-wrap project-comparison" aria-label="Before and after garden comparison">
+            <img class="before-image" src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1500&q=85" alt="Garden before renovation" />
+            <img class="after-image" src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1500&q=85" alt="Garden after professional landscaping" style="clip-path: inset(0 0 0 52%);" />
+            <div class="slider-overlay"></div><div class="slider-divider"></div><div class="slider-handle">⇄</div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="footer-brand"><span class="logo-mark" aria-hidden="true" style="width:42px;height:42px;"></span><span>VERDANT</span></div>
+            <p style="margin-top: 1rem; max-width: 320px;">Beautiful outdoor transformations with strong character and lasting enjoyment.</p>
+          </div>
+          <div>
+            <h3>Company</h3>
+            <ul class="footer-list">
+              <li><a href="about.html">About</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="pricing.html">Pricing</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Services</h3>
+            <ul class="footer-list">
+              <li><a href="services.html">Garden design</a></li>
+              <li><a href="services.html">Lawn care</a></li>
+              <li><a href="services.html">Irrigation</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Contact</h3>
+            <ul class="footer-list">
+              <li>hello@verdantstudio.com</li>
+              <li>+1 (800) 555-0147</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom"><span>© <span id="year"></span> VERDANT Studio</span><span>Outdoor spaces with presence</span></div>
+      </div>
+    </footer>
+    <script src="script.js"></script><script src="projects.js"></script>
+  </body>
+</html>

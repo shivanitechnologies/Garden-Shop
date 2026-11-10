@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VERDANT Premium | Luxury Landscape Studio</title>
+    <meta name="description" content="Luxury garden design and premium landscaping services by VERDANT." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
+  </head>
+  <body class="premium-home" data-theme="light">
+    <header class="site-header">
+      <div class="nav-wrap">
+        <a class="brand" href="premium.html" aria-label="VERDANT premium home">
+          <span class="logo-mark" aria-hidden="true"></span>
+          <span class="brand-text">
+            <strong>VERDANT</strong>
+            <span>Garden &amp; Landscape Studio</span>
+          </span>
+        </a>
+
+        <nav class="nav-links collapsed" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="garden-design.html">Garden Design</a>
+          <a href="lawn-care.html">Lawn Care</a>
+          <a href="projects.html">Our Projects</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="contact.html">Contact</a>
+          <a href="dashboard.html">Dashboard</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button id="theme-toggle" class="icon-btn" aria-label="Toggle theme">🌙</button>
+          <button id="dir-toggle" class="icon-btn" aria-label="Toggle RTL">RTL</button>
+          <button class="mobile-toggle icon-btn" aria-label="Open menu">☰</button>
+          <a class="btn btn-primary" href="contact.html">Book a Consultation</a>
+          <a class="btn btn-secondary" href="dashboard.html">Login</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="p2-main">
+      <section class="p2-hero" id="top">
+        <div class="p2-hero-image" aria-hidden="true"></div>
+        <div class="p2-hero-shade"></div>
+        <div class="p2-leaf p2-leaf-one" aria-hidden="true"></div>
+        <div class="p2-leaf p2-leaf-two" aria-hidden="true"></div>
+        <div class="p2-leaf p2-leaf-three" aria-hidden="true"></div>
+        <svg class="p2-growing-plant p2-plant-left" viewBox="0 0 170 280" aria-hidden="true">
+          <path class="p2-stem" d="M84 280 C84 220 65 182 79 120 C85 92 103 63 98 0" />
+          <path class="p2-plant-leaf" d="M78 191 C28 185 19 152 22 129 C50 132 78 151 78 191Z" />
+          <path class="p2-plant-leaf" d="M79 151 C126 145 146 117 143 94 C112 99 84 118 79 151Z" />
+          <path class="p2-plant-leaf" d="M87 96 C45 91 35 64 41 43 C67 49 86 66 87 96Z" />
+        </svg>
+        <svg class="p2-growing-plant p2-plant-right" viewBox="0 0 170 280" aria-hidden="true">
+          <path class="p2-stem" d="M84 280 C84 220 65 182 79 120 C85 92 103 63 98 0" />
+          <path class="p2-plant-leaf" d="M78 191 C28 185 19 152 22 129 C50 132 78 151 78 191Z" />
+          <path class="p2-plant-leaf" d="M79 151 C126 145 146 117 143 94 C112 99 84 118 79 151Z" />
+          <path class="p2-plant-leaf" d="M87 96 C45 91 35 64 41 43 C67 49 86 66 87 96Z" />
+        </svg>
+        <div class="p2-hero-content">
+          <span class="p2-eyebrow"><span></span> Verdant landscape atelier · Est. 2012</span>
+          <h1>A quieter kind<br />of <em>extraordinary.</em></h1>
+          <p>Landscapes composed with the patience of nature and the precision of architecture.</p>
+          <div class="p2-hero-actions">
+            <a class="btn btn-primary" href="contact.html">Begin your commission <span aria-hidden="true">↗</span></a>
+            <a class="p2-text-link" href="#projects">Explore selected work <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+        <div class="p2-hero-caption"><span>01 — 04</span><span>Private garden, Hudson Valley</span><span>41° 42′ N / 73° 56′ W</span></div>
+        <a class="p2-scroll-cue" href="#studio" aria-label="Scroll to discover"><span></span> Scroll to discover</a>
+      </section>
+
+      <section class="p2-intro" id="studio">
+        <div class="p2-intro-label"><span>01</span> A landscape is a feeling</div>
+        <div class="p2-intro-copy">
+          <p class="p2-overline">Places to return to</p>
+          <h2>Not simply a garden.<br /><em>A different way to be outside.</em></h2>
+        </div>
+        <p class="p2-intro-note">We make enduring landscapes for living: spaces that soften the boundary between home and horizon, and become more themselves with every passing season.</p>
+      </section>
+
+      <section class="p2-landscape" aria-label="A landscape by VERDANT">
+        <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=2200&q=88" alt="Sunlight falling across a tranquil garden path" loading="lazy" />
+        <div class="p2-landscape-overlay"></div>
+        <div class="p2-landscape-caption"><span>Field note No. 08</span><span>Let the garden lead.</span></div>
+      </section>
+
+      <section class="p2-services p2-section" id="services">
+        <div class="p2-section-heading">
+          <div><span class="p2-overline">02 / The atelier</span><h2>Made for the<br /><em>way you live.</em></h2></div>
+          <p>From first sketch to the last leaf in place, each commission is an intimate collaboration between our studio, the land, and the people who call it theirs.</p>
+        </div>
+        <div class="p2-service-layout">
+          <a class="p2-service-feature" href="garden-design.html">
+            <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1400&q=88" alt="Sculptural garden architecture and layered planting" loading="lazy" />
+            <span class="p2-image-index">A / 01</span>
+            <span class="p2-service-feature-copy"><small>Landscape architecture</small><strong>Grounded in place.<br />Made to last.</strong><span class="p2-circle-arrow">↗</span></span>
+          </a>
+          <div class="p2-service-list">
+            <a href="services.html"><span>01</span><span><strong>Garden composition</strong><small>Spatial planning · Planting design</small></span><i>↗</i></a>
+            <a href="lawn-care.html"><span>02</span><span><strong>Landscape stewardship</strong><small>Seasonal care · Lawn health</small></span><i>↗</i></a>
+            <a href="services.html"><span>03</span><span><strong>Water &amp; atmosphere</strong><small>Lighting · Irrigation · Water</small></span><i>↗</i></a>
+            <a href="services.html"><span>04</span><span><strong>Stone &amp; structure</strong><small>Terraces · Pathways · Details</small></span><i>↗</i></a>
+            <a class="p2-all-services" href="services.html">Discover all studio services <span>↗</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="p2-design p2-section" id="design">
+        <div class="p2-design-copy">
+          <span class="p2-overline">03 / A living canvas</span>
+          <h2>Find the feeling<br />you want to <em>come home to.</em></h2>
+          <p>Every garden begins with a mood. Explore a few of the worlds we create, then tell us which one feels like yours.</p>
+          <div class="p2-mood-picker" role="group" aria-label="Choose a garden mood">
+            <button type="button" class="is-selected" data-mood="courtyard" aria-pressed="true">The courtyard</button>
+            <button type="button" data-mood="woodland" aria-pressed="false">The woodland</button>
+            <button type="button" data-mood="terrace" aria-pressed="false">The terrace</button>
+          </div>
+          <div class="p2-mood-caption" aria-live="polite"><span>01 — Courtyard calm</span><span>Soft structure · Private refuge</span></div>
+        </div>
+        <div class="p2-design-visual">
+          <div class="p2-design-image-wrap">
+            <img class="p2-design-image" src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&w=1400&q=88" alt="Private garden courtyard with layered green planting" />
+            <span class="p2-design-stamp">A study<br />in green</span>
+          </div>
+          <div class="p2-design-note"><span>Design is not decoration.</span><span>It is how a place makes you feel.</span></div>
+        </div>
+      </section>
+
+      <section class="p2-projects p2-section" id="projects">
+        <div class="p2-project-heading">
+          <div><span class="p2-overline">04 / Selected landscapes</span><h2>Places with a<br /><em>point of view.</em></h2></div>
+          <a class="p2-text-link" href="projects.html">View the full portfolio <span>↗</span></a>
+        </div>
+        <div class="p2-project-feature" aria-live="polite">
+          <div class="p2-project-image-wrap"><img class="p2-project-image" src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1800&q=90" alt="Botanical Courtyard landscape project" loading="lazy" /></div>
+          <div class="p2-project-overlay"><span class="p2-project-number">01 / 03</span><div><span class="p2-project-type">Private residence · Mill Valley</span><h3 class="p2-project-title">Botanical Courtyard</h3></div><a href="projects.html" aria-label="View Botanical Courtyard project">↗</a></div>
+        </div>
+        <div class="p2-project-selector" role="group" aria-label="Select a featured project">
+          <button type="button" class="is-selected" aria-pressed="true" data-project="courtyard"><span>01</span><span>Botanical Courtyard</span><i>Private residence</i></button>
+          <button type="button" aria-pressed="false" data-project="harbor"><span>02</span><span>Harbor House</span><i>Coastal retreat</i></button>
+          <button type="button" aria-pressed="false" data-project="wildwood"><span>03</span><span>Wildwood Estate</span><i>Country residence</i></button>
+        </div>
+      </section>
+
+      <section class="p2-transformation p2-section" id="transformation">
+        <div class="p2-transformation-head"><span class="p2-overline">05 / The art of becoming</span><h2>There is a moment<br />when everything <em>takes root.</em></h2><p>Drag the line to see the garden move from an idea to a place that feels like it has always belonged.</p></div>
+        <div class="p2-before-after">
+          <img class="p2-before" src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1800&q=88" alt="Garden before the VERDANT transformation" loading="lazy" />
+          <div class="p2-after-clip"><img class="p2-after" src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1800&q=88" alt="Finished lush garden transformation" loading="lazy" /></div>
+          <span class="p2-ba-label p2-ba-before">The beginning</span><span class="p2-ba-label p2-ba-after">The becoming</span>
+          <div class="p2-ba-divider"><span>↔</span></div>
+          <input class="p2-ba-range" type="range" min="0" max="100" value="50" aria-label="Compare garden before and after" />
+        </div>
+      </section>
+
+      <section class="p2-seasons p2-section" id="seasons">
+        <div class="p2-season-intro">
+          <span class="p2-overline">06 / A garden, in its own time</span>
+          <h2>Beauty is never<br />just <em>one season.</em></h2>
+          <p>We design for the whole year: spring’s first green, summer’s long evenings, autumn’s quiet color and winter’s sculptural calm.</p>
+          <div class="p2-season-tabs" role="tablist" aria-label="Explore the garden through the seasons">
+            <button type="button" role="tab" id="p2-season-spring" aria-selected="true" aria-controls="p2-season-panel" data-season="spring">01 <span>Spring</span></button>
+            <button type="button" role="tab" id="p2-season-summer" aria-selected="false" aria-controls="p2-season-panel" data-season="summer">02 <span>Summer</span></button>
+            <button type="button" role="tab" id="p2-season-autumn" aria-selected="false" aria-controls="p2-season-panel" data-season="autumn">03 <span>Autumn</span></button>
+            <button type="button" role="tab" id="p2-season-winter" aria-selected="false" aria-controls="p2-season-panel" data-season="winter">04 <span>Winter</span></button>
+          </div>
+          <div class="p2-season-note" id="p2-season-panel" role="tabpanel" aria-labelledby="p2-season-spring" tabindex="0" aria-live="polite">
+            <span class="p2-season-note-index">SPRING / 01</span>
+            <h3 class="p2-season-title">The garden wakes.</h3>
+            <p class="p2-season-description">Fresh bulbs, tender greens and the first soft light returning to the path.</p>
+          </div>
+        </div>
+        <div class="p2-season-visual">
+          <img class="p2-season-image" src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=1400&q=88" alt="Spring bulbs and fresh flowers in a garden" loading="lazy" />
+          <span class="p2-season-image-index">A LIVING COMPOSITION <i>—</i> 01 / 04</span>
+          <span class="p2-season-orbit" aria-hidden="true"><i></i><i></i><i></i></span>
+        </div>
+      </section>
+
+      <section class="p2-numbers">
+        <div class="p2-number-intro"><span class="p2-overline">07 / A growing practice</span><h2>Thoughtful work.<br /><em>Lasting roots.</em></h2></div>
+        <div class="p2-number"><strong data-count="12" data-suffix="+">12+</strong><span>Years of shaping landscapes</span></div>
+        <div class="p2-number"><strong data-count="186" data-suffix="">186</strong><span>Places made more alive</span></div>
+        <div class="p2-number"><strong data-count="94" data-suffix="%">94%</strong><span>Of new work comes by referral</span></div>
+      </section>
+
+      <section class="p2-water" aria-label="Animated reflecting pool">
+        <img src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=2000&q=85" alt="Garden greenery surrounding a reflecting pool" loading="lazy" />
+        <div class="p2-water-shade"></div>
+        <div class="p2-waterline p2-waterline-one"></div><div class="p2-waterline p2-waterline-two"></div>
+        <div class="p2-water-caption"><span>Water, light, and the space between.</span><span>Designed to be felt.</span></div>
+        <div class="p2-water-leaves" aria-hidden="true"><span></span><span></span><span></span></div>
+      </section>
+
+      <section class="p2-words p2-section">
+        <div class="p2-words-aside"><span class="p2-overline">08 / In good company</span><span class="p2-quote-mark">“</span><span class="p2-words-index">A note from our clients</span></div>
+        <div class="p2-quote-content" aria-live="polite">
+          <blockquote class="p2-quote">“They didn’t just give us a beautiful garden. They gave us a reason to spend every evening outside.”</blockquote>
+          <div class="p2-quote-byline"><strong class="p2-quote-name">Marta Chen</strong><span class="p2-quote-role">Private client · Mill Valley</span></div>
+          <div class="p2-quote-controls"><button type="button" class="p2-quote-prev" aria-label="Previous testimonial">←</button><span class="p2-quote-count">01 / 03</span><button type="button" class="p2-quote-next" aria-label="Next testimonial">→</button></div>
+        </div>
+        <div class="p2-quote-image"><img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=900&q=85" alt="A tranquil residential garden" loading="lazy" /></div>
+      </section>
+
+      <section class="p2-commissions p2-section" id="commissions">
+        <div class="p2-commission-heading">
+          <div><span class="p2-overline">09 / The private commission</span><h2>Considered from<br />the <em>ground up.</em></h2></div>
+          <p>No two sites ask the same questions. Our studio brings the right disciplines together around the place, its people, and the way it should feel.</p>
+        </div>
+        <div class="p2-commission-grid">
+          <a class="p2-commission-card" href="contact.html">
+            <div class="p2-commission-image"><img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1000&q=88" alt="Garden courtyard with carefully composed planting" loading="lazy" /><span>01 / DESIGN</span></div>
+            <div class="p2-commission-copy"><h3>Landscape architecture</h3><p>A complete vision for how your garden flows, grows and belongs to its setting.</p><span>Private gardens · Estates · Hospitality <i>↗</i></span></div>
+          </a>
+          <a class="p2-commission-card" href="contact.html">
+            <div class="p2-commission-image"><img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1000&q=88" alt="Woodland garden path beneath mature trees" loading="lazy" /><span>02 / STEWARDSHIP</span></div>
+            <div class="p2-commission-copy"><h3>Garden stewardship</h3><p>Attentive, seasonal care that helps a considered landscape become more itself.</p><span>Plant health · Seasonal care · Refinement <i>↗</i></span></div>
+          </a>
+          <a class="p2-commission-card" href="contact.html">
+            <div class="p2-commission-image"><img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1000&q=88" alt="Expansive landscape and outdoor living garden" loading="lazy" /><span>03 / PLACE-MAKING</span></div>
+            <div class="p2-commission-copy"><h3>Outdoor living</h3><p>Terraces, pathways, water and light, composed for unhurried time outside.</p><span>Stonework · Water · Lighting <i>↗</i></span></div>
+          </a>
+        </div>
+        <div class="p2-commission-foot"><span>Thoughtful partnerships, from first drawing to lasting aftercare.</span><a class="p2-text-link" href="contact.html">Talk with the studio <span>↗</span></a></div>
+      </section>
+
+      <section class="p2-pricing p2-section" id="investment">
+        <div class="p2-pricing-intro"><span class="p2-overline">10 / The investment</span><h2>Exceptional places<br />begin with <em>a conversation.</em></h2><p>Every landscape is singular. Our engagements are shaped around the site, ambition, and level of care your project deserves.</p><a class="p2-text-link" href="contact.html">Discuss your project <span>↗</span></a></div>
+        <div class="p2-price-list">
+          <a href="contact.html"><span>01</span><span><strong>Garden stewardship</strong><small>Seasonal · Ongoing care</small></span><span>From $1,200 <i>↗</i></span></a>
+          <a class="p2-price-featured" href="contact.html"><span>02</span><span><strong>Private residence</strong><small>Design · Build · Planting</small></span><span>From $4,500 <i>↗</i></span></a>
+          <a href="contact.html"><span>03</span><span><strong>Bespoke estate</strong><small>Masterplan · Full commission</small></span><span>By proposal <i>↗</i></span></a>
+          <p>Final fees are determined after a site visit and a thoughtful conversation about your goals.</p>
+        </div>
+      </section>
+
+      <section class="p2-final-cta">
+        <div class="p2-final-image"></div><div class="p2-final-shade"></div>
+        <div class="p2-final-content"><span class="p2-overline">The next chapter starts outside</span><h2>Let’s make room<br />for <em>what grows.</em></h2><a class="btn btn-primary" href="contact.html">Arrange a private consultation <span>↗</span></a></div>
+        <span class="p2-final-index">VERDANT · LANDSCAPE ATELIER</span>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="footer-brand">
+              <span class="logo-mark" aria-hidden="true" style="width:42px;height:42px;"></span>
+              <span>VERDANT</span>
+            </div>
+            <p style="margin-top: 1rem; max-width: 320px;">Thoughtful landscapes for elegant outdoor living.</p>
+          </div>
+          <div>
+            <h3>Studio</h3>
+            <ul class="footer-list">
+              <li><a href="about.html">About us</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="pricing.html">Pricing</a></li>
+              <li><a href="home1.html">Garden Atelier · Home 1</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Services</h3>
+            <ul class="footer-list">
+              <li><a href="services.html">Garden design</a></li>
+              <li><a href="services.html">Lawn care</a></li>
+              <li><a href="services.html">Irrigation</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Contact</h3>
+            <ul class="footer-list">
+              <li>hello@verdantstudio.com</li>
+              <li>+1 (800) 555-0147</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <span>© <span id="year"></span> VERDANT Studio</span>
+          <span>Luxury landscapes with purpose</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="premium.js"></script>
+  </body>
+</html>

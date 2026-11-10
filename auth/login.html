@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign in | VERDANT</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="auth.css" />
+  </head>
+  <body class="auth-page" data-theme="light">
+    <div class="auth-controls"><button id="theme-toggle" class="icon-btn" aria-label="Toggle theme">🌙</button><button id="dir-toggle" class="icon-btn" aria-label="Toggle RTL">RTL</button></div>
+    <main class="auth-layout">
+      <a class="brand auth-brand" href="../index.html"><span class="logo-mark" aria-hidden="true"></span><span class="brand-text"><strong>VERDANT</strong><span>Garden &amp; Landscape Studio</span></span></a>
+      <section class="auth-card">
+        <span class="kicker">Welcome back</span><h1>Good to see you again.</h1><p>Sign in to keep your garden plans, bookings and project updates in one place.</p>
+        <form class="auth-form" data-auth-form>
+          <label class="field"><span>Email address</span><input type="email" name="email" autocomplete="email" placeholder="you@example.com" required /></label>
+          <label class="field"><span>Password</span><span class="password-field"><input type="password" name="password" autocomplete="current-password" placeholder="Your password" required minlength="8" /><button type="button" class="password-toggle" aria-label="Show password">Show</button></span></label>
+          <div class="auth-options"><label class="remember-option"><input type="checkbox" name="remember" /> Remember me</label><a href="forgot-password.html">Forgot password?</a></div>
+          <button type="submit" class="btn btn-primary auth-submit">Sign in</button>
+          <p class="auth-message" aria-live="polite"></p>
+        </form>
+        <div class="auth-divider"><span>or continue with</span></div>
+        <div class="social-auth"><button type="button" data-social="Google">Google</button><button type="button" data-social="Apple">Apple</button></div>
+        <p class="auth-footnote">Social sign-in is a visual placeholder and is not connected to an identity provider.</p>
+        <p class="auth-switch">New to VERDANT? <a href="signup.html">Create an account</a></p>
+      </section>
+      <a class="auth-back" href="../index.html">← Back to the studio</a>
+    </main>
+    <script src="../script.js"></script><script src="auth.js"></script>
+  </body>
+</html>

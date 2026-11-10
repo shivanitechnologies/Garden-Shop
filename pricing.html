@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pricing | VERDANT</title>
+    <meta name="description" content="Pricing for landscaping and lawn care packages from VERDANT." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-theme="light">
+    <header class="site-header">
+      <div class="nav-wrap">
+        <a class="brand" href="index.html" aria-label="VERDANT home">
+          <span class="logo-mark" aria-hidden="true"></span>
+          <span class="brand-text"><strong>VERDANT</strong><span>Garden &amp; Landscape Studio</span></span>
+        </a>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="garden-design.html">Garden Design</a>
+          <a href="lawn-care.html">Lawn Care</a>
+          <a href="projects.html">Our Projects</a>
+          <a href="pricing.html" class="active">Pricing</a>
+          <a href="contact.html">Contact</a>
+          <a href="dashboard.html">Dashboard</a>
+        </nav>
+        <div class="nav-actions">
+          <button id="theme-toggle" class="icon-btn" aria-label="Toggle theme">🌙</button>
+          <button id="dir-toggle" class="icon-btn" aria-label="Toggle RTL">RTL</button>
+          <button class="mobile-toggle icon-btn" aria-label="Open menu">☰</button>
+          <a class="btn btn-primary" href="contact.html">Book a Consultation</a>
+          <a class="btn btn-secondary" href="dashboard.html">Login</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="shell">
+          <div>
+            <span class="kicker">Pricing</span>
+            <h1>Clear packages for garden care, landscaping and design.</h1>
+            <p>Choose a plan that fits your property, phase of work and ongoing care needs. Every package is tailored after consultation.</p>
+          </div>
+          <div class="image-frame">
+            <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1200&q=80" alt="Pricing plans" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section" style="background: var(--bg-alt);">
+        <div class="container">
+          <p class="pricing-disclaimer">Sample pricing for demonstration. Final estimates are tailored to site conditions and project scope.</p>
+          <div class="pricing-grid">
+            <article class="pricing-card">
+              <span class="badge">Basic</span>
+              <h3>Basic Garden Care</h3>
+              <div class="price"><strong>$499</strong><span>/month</span></div>
+              <ul class="check-list">
+                <li>Seasonal garden tidy-up</li>
+                <li>Edging and mowing</li>
+                <li>Plant health review</li>
+                <li>Monthly check-ins</li>
+              </ul>
+              <a class="btn btn-secondary" href="contact.html">Book Service</a>
+            </article>
+            <article class="pricing-card featured">
+              <span class="badge">Popular</span>
+              <h3>Standard Landscaping</h3>
+              <div class="price"><strong>$1,290</strong><span>/project</span></div>
+              <ul class="check-list">
+                <li>Complete garden refresh</li>
+                <li>Planting and hardscape elements</li>
+                <li>Pathway and layout improvements</li>
+                <li>Maintenance consultation</li>
+              </ul>
+              <a class="btn btn-primary" href="contact.html">Book Service</a>
+            </article>
+            <article class="pricing-card">
+              <span class="badge">Luxury</span>
+              <h3>Premium Garden Design</h3>
+              <div class="price"><strong>$2,900</strong><span>/project</span></div>
+              <ul class="check-list">
+                <li>Master planning and styling</li>
+                <li>Premium materials and lighting</li>
+                <li>Water-efficient irrigation setup</li>
+                <li>Install and final styling</li>
+              </ul>
+              <a class="btn btn-secondary" href="contact.html">Book Service</a>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="footer-brand"><span class="logo-mark" aria-hidden="true" style="width:42px;height:42px;"></span><span>VERDANT</span></div>
+            <p style="margin-top: 1rem; max-width: 320px;">Beautifully designed gardens and landscapes built for lasting value.</p>
+          </div>
+          <div>
+            <h3>Company</h3>
+            <ul class="footer-list">
+              <li><a href="about.html">About</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="pricing.html">Pricing</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Services</h3>
+            <ul class="footer-list">
+              <li><a href="services.html">Garden design</a></li>
+              <li><a href="services.html">Lawn care</a></li>
+              <li><a href="services.html">Irrigation</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Contact</h3>
+            <ul class="footer-list">
+              <li>hello@verdantstudio.com</li>
+              <li>+1 (800) 555-0147</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom"><span>© <span id="year"></span> VERDANT Studio</span><span>Transparent pricing</span></div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

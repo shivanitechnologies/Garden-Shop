@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Garden Atelier | VERDANT</title>
+    <meta name="description" content="Explore VERDANT's private garden atelier: considered garden rooms, landscape architecture and year-round stewardship." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="home1.css" />
+  </head>
+  <body class="home1" data-theme="light">
+    <header class="site-header">
+      <div class="nav-wrap">
+        <a class="brand" href="home1.html" aria-label="VERDANT Garden Atelier home">
+          <span class="logo-mark" aria-hidden="true"></span>
+          <span class="brand-text"><strong>VERDANT</strong><span>Garden &amp; Landscape Studio</span></span>
+        </a>
+        <nav class="nav-links collapsed" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="garden-design.html">Garden Design</a>
+          <a href="lawn-care.html">Lawn Care</a>
+          <a href="projects.html">Our Projects</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="contact.html">Contact</a>
+          <a href="dashboard.html">Dashboard</a>
+        </nav>
+        <div class="nav-actions">
+          <button id="theme-toggle" class="icon-btn" aria-label="Toggle theme">🌙</button>
+          <button id="dir-toggle" class="icon-btn" aria-label="Toggle RTL">RTL</button>
+          <button class="mobile-toggle icon-btn" aria-label="Open menu">☰</button>
+          <a class="btn btn-primary" href="contact.html">Book a Consultation</a>
+          <a class="btn btn-secondary" href="auth/login.html">Login</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="h1-hero" aria-labelledby="h1-title">
+        <div class="h1-hero-photo"></div>
+        <div class="h1-hero-shade"></div>
+        <div class="h1-hero-grain" aria-hidden="true"></div>
+        <span class="h1-hero-orb" aria-hidden="true"></span>
+        <span class="h1-floating-leaf h1-leaf-one" aria-hidden="true"></span>
+        <span class="h1-floating-leaf h1-leaf-two" aria-hidden="true"></span>
+        <span class="h1-floating-leaf h1-leaf-three" aria-hidden="true"></span>
+        <div class="h1-hero-content">
+          <span class="h1-eyebrow"><i></i> VERDANT / PRIVATE GARDEN ATELIER</span>
+          <h1 id="h1-title">A garden is<br />a <em>way of living.</em></h1>
+          <p>Outdoor places shaped with intention. Landscapes that meet you at the door, invite you to linger, and grow more beautiful with time.</p>
+          <div class="h1-hero-actions">
+            <a class="btn btn-primary" href="contact.html">Begin a conversation <span aria-hidden="true">↗</span></a>
+            <a class="h1-underlined-link" href="#garden-collection">Explore the collection <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+        <div class="h1-hero-bottom"><span>LANDSCAPE DESIGN · BUILD · STEWARDSHIP</span><span>DESIGNED TO GROW WITH YOU</span><a href="#atelier-intro" aria-label="Discover the garden atelier">DISCOVER <i>↓</i></a></div>
+        <div class="h1-hero-index" aria-hidden="true">01<br /><span>—</span><br />04</div>
+      </section>
+
+      <section class="h1-intro" id="atelier-intro">
+        <div class="h1-intro-index"><span>01</span><i></i><span>THE ATELIER</span></div>
+        <div class="h1-intro-main">
+          <span class="h1-overline">OUTSIDE, REIMAGINED</span>
+          <h2>More than a view.<br />A place to <em>belong.</em></h2>
+        </div>
+        <div class="h1-intro-aside">
+          <p>We see the garden as another room of the home: open to the sky, alive to the seasons, and made personal through the smallest details.</p>
+          <a class="h1-underlined-link" href="about.html">A little about our studio <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+
+      <section class="h1-collection" id="garden-collection">
+        <div class="h1-collection-head">
+          <div><span class="h1-overline">02 / SPACES WITH A POINT OF VIEW</span><h2>Find your kind<br />of <em>outside.</em></h2></div>
+          <p>Each commission begins with the character of a place—and what you hope to feel there.</p>
+        </div>
+        <div class="h1-collection-layout">
+          <div class="h1-collection-copy">
+            <div class="h1-area-tabs" role="tablist" aria-label="Explore garden areas">
+              <button type="button" role="tab" id="h1-area-courtyard" aria-selected="true" aria-controls="h1-area-panel" data-area="courtyard"><span>01</span><span><strong>The courtyard</strong><small>A quiet center, close to home</small></span><i>↗</i></button>
+              <button type="button" role="tab" id="h1-area-poolside" aria-selected="false" aria-controls="h1-area-panel" data-area="poolside"><span>02</span><span><strong>The pool garden</strong><small>Water, shade, and open air</small></span><i>↗</i></button>
+              <button type="button" role="tab" id="h1-area-estate" aria-selected="false" aria-controls="h1-area-panel" data-area="estate"><span>03</span><span><strong>The estate grounds</strong><small>A landscape in the larger view</small></span><i>↗</i></button>
+              <button type="button" role="tab" id="h1-area-terrace" aria-selected="false" aria-controls="h1-area-panel" data-area="terrace"><span>04</span><span><strong>The garden terrace</strong><small>Gathering with a softer edge</small></span><i>↗</i></button>
+            </div>
+            <div class="h1-area-detail" id="h1-area-panel" role="tabpanel" aria-labelledby="h1-area-courtyard" tabindex="0" aria-live="polite">
+              <span class="h1-area-caption">PRIVATE RESIDENCE · MILL VALLEY</span>
+              <h3 class="h1-area-title">A green room of your own.</h3>
+              <p class="h1-area-description">A garden shaped around a slower pace: layered planting, natural stone and a little space to breathe.</p>
+              <a class="h1-underlined-link" href="contact.html">Envision your garden <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+          <div class="h1-collection-visual">
+            <img class="h1-area-image" src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1500&q=88" alt="Private courtyard garden with refined planting" />
+            <div class="h1-image-caption"><span class="h1-area-count">01 / 04</span><span>PLACE, PLANTING, AND THE WAY THEY FEEL.</span></div>
+            <span class="h1-image-ring" aria-hidden="true"></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="h1-residence">
+        <div class="h1-residence-image">
+          <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1800&q=90" alt="A shaded garden path winding through mature trees" loading="lazy" />
+          <span class="h1-photo-number">FIELD STUDY / 07</span>
+        </div>
+        <div class="h1-residence-copy">
+          <span class="h1-overline">03 / A SENSE OF ARRIVAL</span>
+          <h2>Let the path<br />set the <em>pace.</em></h2>
+          <p>A considered garden makes everyday transitions feel different. A threshold softens. The house opens outward. The walk home becomes its own small ritual.</p>
+          <div class="h1-residence-signature"><span>LANDSCAPE AS EXPERIENCE</span><i></i><span>VERDANT STUDIO</span></div>
+        </div>
+      </section>
+
+      <section class="h1-details">
+        <div class="h1-details-head"><span class="h1-overline">04 / THE ART OF DETAIL</span><h2>Designed in layers.<br /><em>Felt as a whole.</em></h2><p>Material, planting, light and water each play their part. Together, they make a garden that feels unmistakably yours.</p></div>
+        <div class="h1-detail-grid">
+          <article class="h1-detail-card h1-detail-tall"><img src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1000&q=88" alt="Stone path through lush garden planting" loading="lazy" /><div><span>01 / MOVEMENT</span><h3>Paths with a purpose.</h3><p>Stone and gravel guide the eye while leaving room for discovery.</p></div></article>
+          <article class="h1-detail-card"><img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=900&q=88" alt="Seasonal flowers and considered garden planting" loading="lazy" /><div><span>02 / PLANTING</span><h3>Color, in its own time.</h3></div></article>
+          <article class="h1-detail-card"><img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&w=900&q=88" alt="Green garden courtyard framed by mature plants" loading="lazy" /><div><span>03 / ATMOSPHERE</span><h3>Room to exhale.</h3></div></article>
+        </div>
+      </section>
+
+      <section class="h1-philosophy">
+        <div class="h1-philosophy-stamp"><span>MADE<br />TO GROW</span><i aria-hidden="true">✳</i></div>
+        <span class="h1-overline">05 / OUR DESIGN PROMISE</span>
+        <h2>Rooted in place.<br />Ready for <em>life.</em></h2>
+        <p>Beauty should feel effortless to live with. We bring horticultural knowledge, enduring materials and water-wise thinking together from the very first sketch.</p>
+        <a class="btn btn-primary" href="garden-design.html">Explore our approach <span aria-hidden="true">↗</span></a>
+        <div class="h1-philosophy-orbit" aria-hidden="true"><i></i><i></i><i></i></div>
+      </section>
+
+      <section class="h1-process">
+        <div class="h1-process-heading"><span class="h1-overline">06 / A THOUGHTFUL PROCESS</span><h2>From first feeling<br />to <em>lasting place.</em></h2><p>Good work begins with listening. Then the landscape takes shape, one considered decision at a time.</p></div>
+        <div class="h1-process-list">
+          <article><span>01</span><div><h3>Listen &amp; discover</h3><p>We start with your routines, your ideas and the qualities of your site.</p></div><i>↗</i></article>
+          <article><span>02</span><div><h3>Imagine &amp; compose</h3><p>We shape the plan, palette and materials into a shared vision.</p></div><i>↗</i></article>
+          <article><span>03</span><div><h3>Make &amp; establish</h3><p>Our team brings the design to life and sets the garden up to thrive.</p></div><i>↗</i></article>
+          <article><span>04</span><div><h3>Care &amp; evolve</h3><p>Thoughtful aftercare helps the planting mature beautifully over time.</p></div><i>↗</i></article>
+        </div>
+      </section>
+
+      <section class="h1-final">
+        <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=2200&q=90" alt="" aria-hidden="true" loading="lazy" />
+        <div class="h1-final-shade"></div>
+        <div class="h1-final-copy"><span class="h1-overline">THE NEXT CHAPTER STARTS OUTSIDE</span><h2>Make room<br />for <em>what grows.</em></h2><p>Your garden begins with a conversation.</p><a class="btn btn-primary" href="contact.html">Arrange a private consultation <span aria-hidden="true">↗</span></a></div>
+        <span class="h1-final-mark">VERDANT · GARDEN ATELIER</span>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div><div class="footer-brand"><span class="logo-mark" aria-hidden="true" style="width:42px;height:42px;"></span><span>VERDANT</span></div><p style="margin-top:1rem;max-width:320px;">Thoughtful landscapes for elegant outdoor living.</p></div>
+          <div><h3>Homepages</h3><ul class="footer-list"><li><a href="index.html">Classic home</a></li><li><a href="home1.html">Garden Atelier · Home 1</a></li><li><a href="premium.html">Premium home</a></li></ul></div>
+          <div><h3>Explore</h3><ul class="footer-list"><li><a href="about.html">About the studio</a></li><li><a href="garden-design.html">Garden design</a></li><li><a href="projects.html">Our projects</a></li></ul></div>
+          <div><h3>Contact</h3><ul class="footer-list"><li>hello@verdantstudio.com</li><li>+1 (800) 555-0147</li><li><a href="contact.html">Start a conversation ↗</a></li></ul></div>
+        </div>
+        <div class="footer-bottom"><span>© <span id="year"></span> VERDANT Studio</span><span>Designed to grow with you</span></div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="home1.js"></script>
+  </body>
+</html>

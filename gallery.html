@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Garden Gallery | VERDANT</title>
+    <meta name="description" content="Explore garden design, landscape, lawn, and outdoor living inspiration from VERDANT." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-theme="light">
+    <header class="site-header">
+      <div class="nav-wrap">
+        <a class="brand" href="index.html" aria-label="VERDANT home"><span class="logo-mark" aria-hidden="true"></span><span class="brand-text"><strong>VERDANT</strong><span>Garden &amp; Landscape Studio</span></span></a>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="garden-design.html">Garden Design</a><a href="lawn-care.html">Lawn Care</a><a href="projects.html">Our Projects</a><a href="pricing.html">Pricing</a><a href="contact.html">Contact</a><a href="dashboard.html">Dashboard</a>
+        </nav>
+        <div class="nav-actions">
+          <button id="theme-toggle" class="icon-btn" aria-label="Toggle theme">🌙</button><button id="dir-toggle" class="icon-btn" aria-label="Toggle RTL">RTL</button><button class="mobile-toggle icon-btn" aria-label="Open menu">☰</button><a class="btn btn-primary" href="contact.html">Book a Consultation</a><a class="btn btn-secondary" href="auth/login.html">Login</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="page-hero"><div class="shell"><div><span class="kicker">The VERDANT journal</span><h1>Spaces shaped by sunlight, season and a little imagination.</h1><p>A collection of gardens, gathering places and details that show what thoughtful landscape design can make possible.</p></div><div class="image-frame"><img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&w=1200&q=85" alt="Layered planting in a peaceful garden" /></div></div></section>
+      <section class="section"><div class="container">
+        <div class="gallery-toolbar" role="group" aria-label="Filter gallery">
+          <button type="button" class="gallery-filter is-active" data-filter="all" aria-pressed="true">All work</button>
+          <button type="button" class="gallery-filter" data-filter="gardens" aria-pressed="false">Gardens</button>
+          <button type="button" class="gallery-filter" data-filter="lawns" aria-pressed="false">Lawns</button>
+          <button type="button" class="gallery-filter" data-filter="outdoor-living" aria-pressed="false">Outdoor living</button>
+          <button type="button" class="gallery-filter" data-filter="water" aria-pressed="false">Water &amp; detail</button>
+        </div>
+        <div class="gallery-wall" id="gallery-wall">
+          <button class="gallery-tile gallery-tile-tall" type="button" data-category="gardens" data-full="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&w=1800&q=90" data-caption="Layers of shade — Woodland garden"><img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&w=1000&q=85" alt="Layered woodland garden" loading="lazy" /><span>Layers of shade <small>Woodland garden</small></span></button>
+          <button class="gallery-tile" type="button" data-category="lawns" data-full="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1800&q=90" data-caption="A softer green — Lawn & planting"><img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1000&q=85" alt="Fresh lawn bordered with plants" loading="lazy" /><span>A softer green <small>Lawn &amp; planting</small></span></button>
+          <button class="gallery-tile" type="button" data-category="outdoor-living" data-full="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1800&q=90" data-caption="Room to gather — Courtyard"><img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1000&q=85" alt="Garden courtyard with room to gather" loading="lazy" /><span>Room to gather <small>Courtyard</small></span></button>
+          <button class="gallery-tile gallery-tile-wide" type="button" data-category="gardens" data-full="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1800&q=90" data-caption="The long view — Garden path"><img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1400&q=85" alt="Garden path framed by mature trees" loading="lazy" /><span>The long view <small>Garden path</small></span></button>
+          <button class="gallery-tile" type="button" data-category="water" data-full="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1800&q=90" data-caption="A moment of stillness — Water & foliage"><img src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1000&q=85" alt="Water feature nestled among greenery" loading="lazy" /><span>A moment of stillness <small>Water &amp; foliage</small></span></button>
+          <button class="gallery-tile" type="button" data-category="outdoor-living" data-full="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1800&q=90" data-caption="Open-air living — Garden terrace"><img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1000&q=85" alt="Open garden landscape and terrace" loading="lazy" /><span>Open-air living <small>Garden terrace</small></span></button>
+        </div>
+      </div></section>
+      <dialog class="gallery-lightbox" id="gallery-lightbox" aria-label="Gallery image">
+        <button type="button" class="lightbox-close" aria-label="Close image">×</button><button type="button" class="lightbox-step lightbox-prev" aria-label="Previous image">←</button><figure><img id="lightbox-image" alt="Selected garden photograph" /><figcaption id="lightbox-caption"></figcaption></figure><button type="button" class="lightbox-step lightbox-next" aria-label="Next image">→</button>
+      </dialog>
+    </main>
+    <footer class="site-footer"><div class="container"><div class="footer-grid"><div><div class="footer-brand"><span class="logo-mark" aria-hidden="true" style="width:42px;height:42px;"></span><span>VERDANT</span></div><p style="margin-top:1rem;max-width:320px;">Thoughtful outdoor transformations, made to last.</p></div><div><h3>Studio</h3><ul class="footer-list"><li><a href="about.html">About us</a></li><li><a href="projects.html">Projects</a></li><li><a href="pricing.html">Pricing</a></li></ul></div><div><h3>Explore</h3><ul class="footer-list"><li><a href="services.html">Services</a></li><li><a href="garden-design.html">Garden design</a></li><li><a href="lawn-care.html">Lawn care</a></li></ul></div><div><h3>Contact</h3><ul class="footer-list"><li>hello@verdantstudio.com</li><li>+1 (800) 555-0147</li></ul></div></div><div class="footer-bottom"><span>© <span id="year"></span> VERDANT Studio</span><span>Spaces to return to</span></div></div></footer>
+    <script src="script.js"></script><script src="gallery.js"></script>
+  </body>
+</html>

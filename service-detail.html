@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Service Detail | VERDANT</title>
+    <meta name="description" content="Detailed Garden and Lawn Care service information for VERDANT." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-theme="light">
+    <header class="site-header">
+      <div class="nav-wrap">
+        <a class="brand" href="index.html" aria-label="VERDANT home">
+          <span class="logo-mark" aria-hidden="true"></span>
+          <span class="brand-text"><strong>VERDANT</strong><span>Garden &amp; Landscape Studio</span></span>
+        </a>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html" class="active">Services</a>
+          <a href="garden-design.html">Garden Design</a>
+          <a href="lawn-care.html">Lawn Care</a>
+          <a href="projects.html">Our Projects</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="contact.html">Contact</a>
+          <a href="dashboard.html">Dashboard</a>
+        </nav>
+        <div class="nav-actions">
+          <button id="theme-toggle" class="icon-btn" aria-label="Toggle theme">🌙</button>
+          <button id="dir-toggle" class="icon-btn" aria-label="Toggle RTL">RTL</button>
+          <button class="mobile-toggle icon-btn" aria-label="Open menu">☰</button>
+          <a class="btn btn-primary" href="contact.html">Book a Consultation</a>
+          <a class="btn btn-secondary" href="dashboard.html">Login</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="service-detail" id="service-detail">
+      <div class="detail-shell">
+        <div class="detail-image">
+          <img id="detail-image" src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&w=1200&q=80" alt="Service detail image" />
+        </div>
+        <div class="detail-content">
+          <span class="kicker">Service detail</span>
+          <h1 id="detail-title">Garden Landscaping</h1>
+          <div id="detail-tags" class="detail-meta"></div>
+          <p id="detail-description"></p>
+          <div class="detail-meta">
+            <span class="meta-pill">Estimated duration: <strong id="detail-duration"></strong></span>
+          </div>
+          <h3>Key benefits</h3>
+          <ul id="detail-benefits" class="detail-list"></ul>
+          <h3 style="margin-top: 1.2rem;">Work process</h3>
+          <ul id="detail-process" class="detail-list"></ul>
+          <div class="hero-actions" style="margin-top: 1.5rem;">
+            <a class="btn btn-primary" href="contact.html">Book Service</a>
+            <a class="btn btn-secondary" href="services.html">Back to services</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="footer-brand"><span class="logo-mark" aria-hidden="true" style="width:42px;height:42px;"></span><span>VERDANT</span></div>
+            <p style="margin-top: 1rem; max-width: 320px;">Thoughtful outdoor transformations that feel effortless and enduring.</p>
+          </div>
+          <div>
+            <h3>Company</h3>
+            <ul class="footer-list">
+              <li><a href="about.html">About</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="pricing.html">Pricing</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Services</h3>
+            <ul class="footer-list">
+              <li><a href="services.html">Garden design</a></li>
+              <li><a href="services.html">Lawn care</a></li>
+              <li><a href="services.html">Irrigation</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Contact</h3>
+            <ul class="footer-list">
+              <li>hello@verdantstudio.com</li>
+              <li>+1 (800) 555-0147</li>
+              <li>118 Riverstone Ave</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom"><span>© <span id="year"></span> VERDANT Studio</span><span>Crafted with care</span></div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

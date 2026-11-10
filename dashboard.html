@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard | VERDANT</title>
+    <meta name="description" content="Client dashboard for VERDANT garden and landscape service management." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-theme="light">
+    <header class="site-header">
+      <div class="nav-wrap">
+        <a class="brand" href="index.html" aria-label="VERDANT home">
+          <span class="logo-mark" aria-hidden="true"></span>
+          <span class="brand-text"><strong>VERDANT</strong><span>Garden &amp; Landscape Studio</span></span>
+        </a>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="garden-design.html">Garden Design</a>
+          <a href="lawn-care.html">Lawn Care</a>
+          <a href="projects.html">Our Projects</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="contact.html">Contact</a>
+          <a href="dashboard.html" class="active">Dashboard</a>
+        </nav>
+        <div class="nav-actions">
+          <button id="theme-toggle" class="icon-btn" aria-label="Toggle theme">🌙</button>
+          <button id="dir-toggle" class="icon-btn" aria-label="Toggle RTL">RTL</button>
+          <button class="mobile-toggle icon-btn" aria-label="Open menu">☰</button>
+          <a class="btn btn-primary" href="contact.html">Book a Consultation</a>
+          <a class="btn btn-secondary" href="dashboard.html">Login</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="shell">
+          <div>
+            <span class="kicker">Dashboard</span>
+            <h1>Track your garden care, project milestones and service health.</h1>
+            <p>Our client dashboard keeps your schedule, project progress and property care status clear and accessible.</p>
+          </div>
+          <div class="image-frame">
+            <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=80" alt="Garden dashboard" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-head">
+            <span class="kicker">Your VERDANT workspace</span>
+            <h2>Choose the view that fits your day.</h2>
+            <p>These interactive sample workspaces demonstrate customer garden care and studio operations. No account or live service is connected.</p>
+          </div>
+          <div class="workspace-choice-grid">
+            <a class="workspace-choice" href="dashboard/customer.html"><span>01 / CUSTOMER</span><h3>My garden</h3><p>Review upcoming visits, project progress, service history and profile details.</p><strong>Open customer workspace ↗</strong></a>
+            <a class="workspace-choice" href="dashboard/admin.html"><span>02 / STUDIO TEAM</span><h3>Studio operations</h3><p>Explore sample bookings, customers, projects, services and business reports.</p><strong>Open admin workspace ↗</strong></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="dashboard-grid">
+            <div class="dashboard-card">
+              <span class="kicker">Project status</span>
+              <div class="value">82%</div>
+              <p>Courtyard renewal underway</p>
+              <div class="progress-bar"><span style="width: 82%"></span></div>
+            </div>
+            <div class="dashboard-card">
+              <span class="kicker">Next visit</span>
+              <div class="value">April 21</div>
+              <p>Lawn and plant maintenance</p>
+            </div>
+            <div class="dashboard-card">
+              <span class="kicker">Water use</span>
+              <div class="value">18%</div>
+              <p>Below seasonal target</p>
+              <div class="progress-bar"><span style="width: 18%"></span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="footer-brand"><span class="logo-mark" aria-hidden="true" style="width:42px;height:42px;"></span><span>VERDANT</span></div>
+            <p style="margin-top: 1rem; max-width: 320px;">Client-friendly care tracking for a healthier, more organized garden.</p>
+          </div>
+          <div>
+            <h3>Company</h3>
+            <ul class="footer-list">
+              <li><a href="about.html">About</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="pricing.html">Pricing</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Services</h3>
+            <ul class="footer-list">
+              <li><a href="services.html">Garden design</a></li>
+              <li><a href="services.html">Lawn care</a></li>
+              <li><a href="services.html">Irrigation</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Contact</h3>
+            <ul class="footer-list">
+              <li>hello@verdantstudio.com</li>
+              <li>+1 (800) 555-0147</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom"><span>© <span id="year"></span> VERDANT Studio</span><span>Monitoring your garden care</span></div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

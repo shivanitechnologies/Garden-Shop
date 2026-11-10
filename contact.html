@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | VERDANT</title>
+    <meta name="description" content="Contact VERDANT for garden landscaping, lawn care and consultation services." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-theme="light">
+    <header class="site-header">
+      <div class="nav-wrap">
+        <a class="brand" href="index.html" aria-label="VERDANT home">
+          <span class="logo-mark" aria-hidden="true"></span>
+          <span class="brand-text"><strong>VERDANT</strong><span>Garden &amp; Landscape Studio</span></span>
+        </a>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="garden-design.html">Garden Design</a>
+          <a href="lawn-care.html">Lawn Care</a>
+          <a href="projects.html">Our Projects</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="contact.html" class="active">Contact</a>
+          <a href="dashboard.html">Dashboard</a>
+        </nav>
+        <div class="nav-actions">
+          <button id="theme-toggle" class="icon-btn" aria-label="Toggle theme">🌙</button>
+          <button id="dir-toggle" class="icon-btn" aria-label="Toggle RTL">RTL</button>
+          <button class="mobile-toggle icon-btn" aria-label="Open menu">☰</button>
+          <a class="btn btn-primary" href="contact.html">Book a Consultation</a>
+          <a class="btn btn-secondary" href="dashboard.html">Login</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="shell">
+          <div>
+            <span class="kicker">Contact us</span>
+            <h1>Start your next garden transformation with a conversation.</h1>
+            <p>Tell us about your property, vision and the kind of outdoor experience you want to create. We’ll shape the right service plan around your goals.</p>
+          </div>
+          <div class="image-frame">
+            <img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&w=1200&q=80" alt="Consultation call" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container contact-panel">
+          <div>
+            <div class="contact-card info-card">
+              <span class="pill">Consultation</span>
+              <h3>Book a Design Conversation</h3>
+              <p>Speak with our team about your project, property scale and the best starting route.</p>
+              <p><strong>Email:</strong> hello@verdantstudio.com</p>
+              <p><strong>Phone:</strong> +1 (800) 555-0147</p>
+              <p><strong>Location:</strong> 118 Riverstone Ave</p>
+              <p><strong>Studio hours:</strong><br />Monday–Friday, 8:00 AM–5:00 PM<br />Saturday, by appointment</p>
+              <a class="btn btn-secondary" href="https://wa.me/?text=Hello%20VERDANT%2C%20I%27d%20like%20to%20discuss%20a%20garden%20project." target="_blank" rel="noopener noreferrer">Message us on WhatsApp</a>
+              <div class="map-placeholder" role="img" aria-label="Map location placeholder for 118 Riverstone Avenue"><span>⌖</span><strong>Find the VERDANT studio</strong><small>118 Riverstone Ave · Map embed placeholder</small></div>
+            </div>
+          </div>
+
+          <div class="form-wrap">
+            <form id="contact-form">
+              <div class="form-grid">
+                <label class="field">
+                  <span>Full name</span>
+                  <input type="text" name="name" autocomplete="name" placeholder="Your name" required />
+                </label>
+                <label class="field">
+                  <span>Email address</span>
+                  <input type="email" name="email" autocomplete="email" placeholder="you@example.com" required />
+                </label>
+                <label class="field">
+                  <span>Service</span>
+                  <select name="service" required>
+                    <option value="">Choose a service</option>
+                    <option>Garden Landscaping</option>
+                    <option>Lawn Installation</option>
+                    <option>Lawn Maintenance</option>
+                    <option>Garden Design</option>
+                    <option>Tree &amp; Shrub Care</option>
+                    <option>Irrigation Installation</option>
+                    <option>Outdoor Lighting</option>
+                  </select>
+                </label>
+                <label class="field">
+                  <span>Budget</span>
+                  <input type="text" name="budget" placeholder="Optional" />
+                </label>
+                <label class="field full">
+                  <span>Project details</span>
+                  <textarea name="details" placeholder="Tell us about your outdoor space, style preferences and goals." required></textarea>
+                </label>
+              </div>
+              <div class="hero-actions" style="margin-top: 1.5rem;">
+                <button class="btn btn-primary" type="submit">Send Inquiry</button>
+              </div>
+              <p class="form-status" id="contact-status" aria-live="polite"></p>
+              <p class="form-disclaimer">This demo form does not transmit or store your information.</p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="footer-brand"><span class="logo-mark" aria-hidden="true" style="width:42px;height:42px;"></span><span>VERDANT</span></div>
+            <p style="margin-top: 1rem; max-width: 320px;">Beautiful outdoor spaces start with a clear conversation.</p>
+          </div>
+          <div>
+            <h3>Company</h3>
+            <ul class="footer-list">
+              <li><a href="about.html">About</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="pricing.html">Pricing</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Services</h3>
+            <ul class="footer-list">
+              <li><a href="services.html">Garden design</a></li>
+              <li><a href="services.html">Lawn care</a></li>
+              <li><a href="services.html">Irrigation</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Contact</h3>
+            <ul class="footer-list">
+              <li>hello@verdantstudio.com</li>
+              <li>+1 (800) 555-0147</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom"><span>© <span id="year"></span> VERDANT Studio</span><span>Let’s build something beautiful</span></div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="site-interactions.js"></script>
+  </body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lawn Care | VERDANT</title>
+    <meta name="description" content="Premium lawn care and turf maintenance solutions from VERDANT." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-theme="light">
+    <header class="site-header">
+      <div class="nav-wrap">
+        <a class="brand" href="index.html" aria-label="VERDANT home">
+          <span class="logo-mark" aria-hidden="true"></span>
+          <span class="brand-text"><strong>VERDANT</strong><span>Garden &amp; Landscape Studio</span></span>
+        </a>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="garden-design.html">Garden Design</a>
+          <a href="lawn-care.html" class="active">Lawn Care</a>
+          <a href="projects.html">Our Projects</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="contact.html">Contact</a>
+          <a href="dashboard.html">Dashboard</a>
+        </nav>
+        <div class="nav-actions">
+          <button id="theme-toggle" class="icon-btn" aria-label="Toggle theme">🌙</button>
+          <button id="dir-toggle" class="icon-btn" aria-label="Toggle RTL">RTL</button>
+          <button class="mobile-toggle icon-btn" aria-label="Open menu">☰</button>
+          <a class="btn btn-primary" href="contact.html">Book a Consultation</a>
+          <a class="btn btn-secondary" href="dashboard.html">Login</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="shell">
+          <div>
+            <span class="kicker">Lawn care</span>
+            <h1>Healthy grass, rich color and year-round resilience.</h1>
+            <p>Our lawn care plans keep turf dense, consistent and easy to maintain while supporting soil health, drainage and long-term vitality.</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="contact.html">Schedule Maintenance</a>
+            </div>
+          </div>
+          <div class="image-frame">
+            <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1200&q=80" alt="Lawn care service" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="service-grid">
+            <article class="service-card">
+              <div class="icon">🌾</div>
+              <h3>Lawn Mowing</h3>
+              <p>Sharp cutting schedules for crisp edges, even growth and streamlined presentation.</p>
+              <div class="meta"><span>Regular</span><a href="contact.html">Book service</a></div>
+            </article>
+            <article class="service-card">
+              <div class="icon">🧪</div>
+              <h3>Soil &amp; Feeding</h3>
+              <p>Seasonal feeding and soil management to support dense color, stronger roots and resilience.</p>
+              <div class="meta"><span>Seasonal</span><a href="contact.html">Book service</a></div>
+            </article>
+            <article class="service-card">
+              <div class="icon">💧</div>
+              <h3>Irrigation Support</h3>
+              <p>Smart watering guidance to reduce stress and support healthy turf throughout changing weather.</p>
+              <div class="meta"><span>Support</span><a href="contact.html">Book service</a></div>
+            </article>
+            <article class="service-card">
+              <div class="icon">🌿</div>
+              <h3>Weed &amp; Pest Control</h3>
+              <p>Targeted interventions that protect your lawn without overusing harsh chemicals.</p>
+              <div class="meta"><span>Ongoing</span><a href="contact.html">Book service</a></div>
+            </article>
+            <article class="service-card">
+              <div class="icon">🌱</div>
+              <h3>Lawn Aeration</h3>
+              <p>Relieve compaction so air, water and nutrients can reach the root zone.</p>
+              <div class="meta"><span>Seasonal</span><a href="contact.html">Book service</a></div>
+            </article>
+            <article class="service-card">
+              <div class="icon">🧤</div>
+              <h3>Soil Preparation</h3>
+              <p>Improve soil structure and drainage before seeding, turfing or seasonal repair.</p>
+              <div class="meta"><span>Project</span><a href="contact.html">Book service</a></div>
+            </article>
+            <article class="service-card">
+              <div class="icon">☀️</div>
+              <h3>Seasonal Lawn Care</h3>
+              <p>Timely maintenance plans adjusted to weather, grass varieties and garden use.</p>
+              <div class="meta"><span>Year-round</span><a href="contact.html">Book service</a></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section lawn-calendar-section" id="seasonal-calendar">
+        <div class="container">
+          <div class="section-head">
+            <span class="kicker">A year in the garden</span>
+            <h2>Care that changes with the season.</h2>
+            <p>Choose a season to see the practical lawn work that helps each garden thrive. Adjust the plan to your local climate and grass type.</p>
+          </div>
+          <div class="season-tabs" role="tablist" aria-label="Lawn care seasons">
+            <button type="button" role="tab" id="season-spring" aria-selected="true" aria-controls="season-panel" data-season="spring">Spring</button>
+            <button type="button" role="tab" id="season-summer" aria-selected="false" aria-controls="season-panel" data-season="summer">Summer</button>
+            <button type="button" role="tab" id="season-autumn" aria-selected="false" aria-controls="season-panel" data-season="autumn">Autumn</button>
+            <button type="button" role="tab" id="season-winter" aria-selected="false" aria-controls="season-panel" data-season="winter">Winter</button>
+          </div>
+          <div class="season-panel info-card" id="season-panel" role="tabpanel" aria-labelledby="season-spring" tabindex="0">
+            <div>
+              <span class="season-kicker" id="season-label">March — May</span>
+              <h3 id="season-title">Wake the lawn gently</h3>
+              <p id="season-description">As growth returns, focus on clearing winter debris and rebuilding healthy soil without stressing tender new shoots.</p>
+            </div>
+            <ul class="season-tasks" id="season-tasks"></ul>
+          </div>
+          <p class="calendar-note">Season timings are illustrative. Local weather, soil, and grass varieties can shift the ideal schedule.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="footer-brand"><span class="logo-mark" aria-hidden="true" style="width:42px;height:42px;"></span><span>VERDANT</span></div>
+            <p style="margin-top: 1rem; max-width: 320px;">Healthy lawns for greener living and effortless outdoor enjoyment.</p>
+          </div>
+          <div>
+            <h3>Company</h3>
+            <ul class="footer-list">
+              <li><a href="about.html">About</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="pricing.html">Pricing</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Services</h3>
+            <ul class="footer-list">
+              <li><a href="services.html">Garden design</a></li>
+              <li><a href="services.html">Lawn care</a></li>
+              <li><a href="services.html">Irrigation</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Contact</h3>
+            <ul class="footer-list">
+              <li>hello@verdantstudio.com</li>
+              <li>+1 (800) 555-0147</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom"><span>© <span id="year"></span> VERDANT Studio</span><span>Healthy lawns, beautifully maintained</span></div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="lawn-calendar.js"></script>
+  </body>
+</html>
