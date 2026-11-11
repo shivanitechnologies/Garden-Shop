@@ -56,9 +56,9 @@
         <div class="container contact-panel">
           <div>
             <div class="contact-card info-card">
-              <span class="pill">Consultation</span>
-              <h3>Book a Design Conversation</h3>
-              <p>Speak with our team about your project, property scale and the best starting route.</p>
+              <span class="pill">Site visits by appointment</span>
+              <h3>Let’s see what your garden needs.</h3>
+              <p>Share your address and preferred visit time. Our team can review the space and discuss the right next step with you.</p>
               <p><strong>Email:</strong> hello@verdantstudio.com</p>
               <p><strong>Phone:</strong> +1 (800) 555-0147</p>
               <p><strong>Location:</strong> 118 Riverstone Ave</p>
@@ -70,6 +70,8 @@
 
           <div class="form-wrap">
             <form id="contact-form">
+              <h2>Request a site visit</h2>
+              <p>Choose a preferred date and time window. This demo form does not send or confirm bookings.</p>
               <div class="form-grid">
                 <label class="field">
                   <span>Full name</span>
@@ -80,32 +82,59 @@
                   <input type="email" name="email" autocomplete="email" placeholder="you@example.com" required />
                 </label>
                 <label class="field">
+                  <span>Phone number</span>
+                  <input type="tel" name="phone" autocomplete="tel" placeholder="Your best contact number" required />
+                </label>
+                <label class="field">
+                  <span>Site address</span>
+                  <input type="text" name="site-address" autocomplete="street-address" placeholder="Address for the garden visit" required />
+                </label>
+                <label class="field">
                   <span>Service</span>
                   <select name="service" required>
                     <option value="">Choose a service</option>
-                    <option>Garden Landscaping</option>
-                    <option>Lawn Installation</option>
-                    <option>Lawn Maintenance</option>
-                    <option>Garden Design</option>
-                    <option>Tree &amp; Shrub Care</option>
-                    <option>Irrigation Installation</option>
-                    <option>Outdoor Lighting</option>
+                    <option value="landscaping">Garden Landscaping</option>
+                    <option value="lawn-installation">Lawn Installation</option>
+                    <option value="lawn-maintenance">Lawn Maintenance</option>
+                    <option value="plant-care">Plant Care &amp; Pruning</option>
+                    <option value="garden-design">Garden Design</option>
+                    <option value="irrigation">Irrigation Installation</option>
+                    <option value="lighting">Outdoor Lighting</option>
                   </select>
                 </label>
                 <label class="field">
-                  <span>Budget</span>
-                  <input type="text" name="budget" placeholder="Optional" />
+                  <span>Garden size</span>
+                  <select name="garden-size">
+                    <option value="">Choose an approximate size</option>
+                    <option>Small — patio or courtyard</option>
+                    <option>Medium — typical home garden</option>
+                    <option>Large — estate or extensive grounds</option>
+                    <option>Not sure yet</option>
+                  </select>
+                </label>
+                <label class="field">
+                  <span>Preferred visit date</span>
+                  <input type="date" name="visit-date" required />
+                </label>
+                <label class="field">
+                  <span>Preferred time window</span>
+                  <select name="visit-time" required>
+                    <option value="">Choose a time window</option>
+                    <option value="morning">Morning · 8:00 AM–12:00 PM</option>
+                    <option value="afternoon">Afternoon · 12:00–5:00 PM</option>
+                    <option value="flexible">Flexible</option>
+                  </select>
                 </label>
                 <label class="field full">
-                  <span>Project details</span>
-                  <textarea name="details" placeholder="Tell us about your outdoor space, style preferences and goals." required></textarea>
+                  <span>Notes about your garden</span>
+                  <textarea name="details" placeholder="Tell us what you’d like us to look at during the visit." required></textarea>
                 </label>
               </div>
               <div class="hero-actions" style="margin-top: 1.5rem;">
-                <button class="btn btn-primary" type="submit">Send Inquiry</button>
+                <button class="btn btn-primary" type="submit">Request a Site Visit</button>
               </div>
               <p class="form-status" id="contact-status" aria-live="polite"></p>
-              <p class="form-disclaimer">This demo form does not transmit or store your information.</p>
+              <p class="form-disclaimer">Demo only: your details are not sent, stored, or booked.</p>
             </form>
           </div>
         </div>

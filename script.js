@@ -436,11 +436,11 @@ function initServiceDetail() {
       process: ['Discovery', 'Concept deck', 'Refinement', 'Install and styling']
     },
     'tree-shrub-care': {
-      title: 'Tree & Shrub Care',
+      title: 'Plant Care & Pruning',
       image: 'https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&w=1100&q=80',
       duration: 'Seasonal visits',
-      tags: ['Pruning', 'Plant health', 'Seasonal care'],
-      description: 'Expert pruning and plant-health care preserve structure, encourage healthy growth and help established trees and shrubs thrive in their setting.',
+      tags: ['Plant health', 'Pruning', 'Seasonal care'],
+      description: 'Expert plant-health care and considered pruning preserve structure, encourage healthy growth and help garden beds, shrubs and established trees thrive in their setting.',
       benefits: ['Healthier growth and flowering', 'Safer, well-shaped trees and shrubs', 'Early identification of plant stress'],
       process: ['Site and plant assessment', 'Care recommendations', 'Pruning and targeted treatment', 'Aftercare notes']
     },
