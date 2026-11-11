@@ -269,7 +269,26 @@ function initClientNotes() {
 }
 
 function initPremiumMotion() {
-  if (premiumReducedMotion || !window.gsap || !window.ScrollTrigger) return;
+  if (premiumReducedMotion) return;
+  if (!window.gsap || !window.ScrollTrigger) {
+    const targets = document.querySelectorAll(
+      '.p2-intro > *, .p2-landscape > *, .p2-section > *, .p2-final-cta > *'
+    );
+    if (!('IntersectionObserver' in window)) return;
+    document.documentElement.classList.add('p2-motion-ready');
+    const observer = new IntersectionObserver((entries, currentObserver) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('is-p2-visible');
+        currentObserver.unobserve(entry.target);
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -24px 0px' });
+    targets.forEach((target) => {
+      target.dataset.p2Reveal = '';
+      observer.observe(target);
+    });
+    return;
+  }
 
   gsap.registerPlugin(ScrollTrigger);
   const motion = gsap.matchMedia();
@@ -282,7 +301,7 @@ function initPremiumMotion() {
       ease: 'power3.out',
       delay: 0.15
     });
-    gsap.to('.p2-hero-image', {
+    gsap.to('.p2-hero-image, .p2-hero-video', {
       scale: 1,
       ease: 'none',
       scrollTrigger: {

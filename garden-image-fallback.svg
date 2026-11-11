@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="VERDANT garden image placeholder">
+  <defs>
+    <linearGradient id="background" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#183126"/>
+      <stop offset="1" stop-color="#52775d"/>
+    </linearGradient>
+    <linearGradient id="leaf" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#d6a84f"/>
+      <stop offset="1" stop-color="#a3b18a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#background)"/>
+  <circle cx="600" cy="400" r="220" fill="none" stroke="#f7f3ea" stroke-opacity=".22" stroke-width="2"/>
+  <path d="M600 560c-5-160-116-222-200-245 2 110 75 218 200 245Zm0-104c12-157 105-236 201-277 9 120-75 235-201 277Zm0 104c5-123 33-240 2-365" fill="url(#leaf)" stroke="#f7f3ea" stroke-opacity=".72" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="600" y="680" fill="#f7f3ea" font-family="Arial,sans-serif" font-size="32" font-weight="700" letter-spacing="9" text-anchor="middle">VERDANT</text>
+</svg>

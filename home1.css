@@ -4,7 +4,7 @@
   --h1-cream: #e9e4d7;
   --h1-sage: #a3b18a;
   --h1-gutter: clamp(24px, 7.2vw, 112px);
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: var(--font-body);
 }
 .home1[data-theme="dark"] {
   --h1-ink: #e9f0e9;
@@ -44,7 +44,7 @@
 .h1-eyebrow,.h1-overline { display: inline-flex; align-items: center; gap: 12px; color: var(--accent); font-size: .66rem; font-weight: 800; letter-spacing: .18em; }
 .h1-eyebrow { margin-bottom: 27px; color: rgba(255,255,255,.82); }
 .h1-eyebrow i { width: 28px; height: 1px; background: var(--h1-sage); }
-.h1-hero h1 { max-width: 860px; margin: 0 0 24px; color: #fff; font: 400 clamp(4rem,9vw,8.5rem)/.9 "Segoe UI",Tahoma,sans-serif; letter-spacing: -.075em; }
+.h1-hero h1 { max-width: 860px; margin: 0 0 24px; color: #fff; font: 400 clamp(4rem,9vw,8.5rem)/.9 var(--font-display); letter-spacing: -.075em; }
 .h1-hero h1 em,.h1-intro h2 em,.h1-collection h2 em,.h1-residence h2 em,.h1-details h2 em,.h1-philosophy h2 em,.h1-process h2 em,.h1-final h2 em { color: var(--h1-sage); font-weight: 400; }
 .h1-hero-content > p { max-width: 510px; margin: 0; color: rgba(255,255,255,.78); font-size: clamp(.98rem,1.35vw,1.12rem); line-height: 1.85; }
 .h1-hero-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 30px; margin-top: 32px; }
@@ -63,7 +63,7 @@
 .h1-intro-index span:first-child { color: var(--accent); }
 .h1-intro-index i { width: 25px; height: 1px; background: var(--border); }
 .h1-intro-main .h1-overline,.h1-collection .h1-overline,.h1-details .h1-overline,.h1-process .h1-overline { margin-bottom: 20px; }
-.h1-intro h2,.h1-collection h2,.h1-residence h2,.h1-details h2,.h1-philosophy h2,.h1-process h2,.h1-final h2 { margin: 0; color: var(--h1-ink); font: 400 clamp(2.8rem,5.2vw,5.7rem)/.98 "Segoe UI",Tahoma,sans-serif; letter-spacing: -.06em; }
+.h1-intro h2,.h1-collection h2,.h1-residence h2,.h1-details h2,.h1-philosophy h2,.h1-process h2,.h1-final h2 { margin: 0; color: var(--h1-ink); font: 400 clamp(2.8rem,5.2vw,5.7rem)/.98 var(--font-display); letter-spacing: -.06em; }
 .h1-intro h2 em,.h1-collection h2 em,.h1-residence h2 em,.h1-details h2 em,.h1-process h2 em { color: var(--accent); }
 .h1-intro-aside { max-width: 310px; margin-left: auto; }
 .h1-intro-aside p,.h1-collection-head > p,.h1-residence-copy > p,.h1-details-head > p,.h1-process-heading > p { color: var(--muted); font-size: .83rem; line-height: 1.9; }
@@ -85,7 +85,7 @@
 .h1-area-tabs button[aria-selected="true"] > i { opacity: 1; transform: none; }
 .h1-area-detail { min-height: 205px; padding: 25px 0 0 48px; padding-inline-start: 48px; }
 .h1-area-caption { color: var(--accent); font-size: .58rem; font-weight: 800; letter-spacing: .14em; }
-.h1-area-detail h3 { margin: 13px 0 9px; color: var(--h1-ink); font: 400 clamp(1.55rem,2.4vw,2.4rem)/1.08 "Segoe UI",Tahoma,sans-serif; letter-spacing: -.035em; }
+.h1-area-detail h3 { margin: 13px 0 9px; color: var(--h1-ink); font: 400 clamp(1.55rem,2.4vw,2.4rem)/1.08 var(--font-display); letter-spacing: -.035em; }
 .h1-area-detail p { max-width: 360px; margin: 0 0 18px; color: var(--muted); font-size: .76rem; line-height: 1.75; }
 .h1-area-detail .h1-underlined-link { color: var(--accent); font-size: .69rem; }
 .h1-collection-visual { position: relative; min-height: clamp(430px,53vw,690px); overflow: hidden; background: var(--h1-paper); }
@@ -120,7 +120,7 @@
 .h1-detail-card:hover img { transform: scale(1.045); }
 .h1-detail-card > div { position: absolute; z-index: 1; inset-inline: 24px; bottom: 22px; }
 .h1-detail-card > div > span { font-size: .59rem; letter-spacing: .16em; }
-.h1-detail-card h3 { margin: 9px 0 4px; color: #fff; font: 400 clamp(1.5rem,2.5vw,2.5rem)/1.05 "Segoe UI",Tahoma,sans-serif; letter-spacing: -.035em; }
+.h1-detail-card h3 { margin: 9px 0 4px; color: #fff; font: 400 clamp(1.5rem,2.5vw,2.5rem)/1.05 var(--font-display); letter-spacing: -.035em; }
 .h1-detail-card p { max-width: 390px; margin: 7px 0 0; color: rgba(255,255,255,.8); font-size: .74rem; line-height: 1.7; }
 
 .h1-philosophy { min-height: 570px; position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; overflow: hidden; padding: 80px 24px; background: #1a3024; color: #fff; text-align: center; isolation: isolate; }
@@ -175,36 +175,50 @@
   .h1-process { gap: 45px; }
 }
 @media (max-width: 680px) {
-  .home1 .h1-hero { min-height: min(790px,calc(100svh - 70px)); }
-  .h1-hero-content { padding: 110px 0 170px; }
-  .h1-hero h1 { font-size: clamp(3.2rem,12vw,5.1rem); }
-  .h1-hero-index { right: 20px; top: 36%; }
-  .h1-hero-orb { top: 15%; right: -17%; width: 210px; }
+  .home1 .h1-hero { min-height: min(740px,calc(100svh - 132px)); }
+  .h1-hero-content { padding: 88px 0 145px; }
+  .h1-hero h1 { max-width: 8ch; font-size: clamp(2.85rem,11.8vw,4.7rem); }
+  .h1-hero-content > p { max-width: 430px; font-size: .92rem; line-height: 1.7; }
+  .h1-hero-index { display: none; }
+  .h1-hero-orb { top: 12%; right: -20%; width: 190px; }
   .h1-leaf-one { left: 10%; }
-  .h1-hero-bottom { flex-wrap: wrap; bottom: 18px; font-size: .51rem; }
+  .h1-hero-bottom { flex-wrap: wrap; bottom: 17px; font-size: .49rem; letter-spacing: .1em; }
   .h1-hero-bottom > span:nth-child(2) { display: none; }
+  .h1-hero-actions { gap: 18px; margin-top: 25px; }
+  .h1-hero-actions .btn { padding: .8rem 1rem; font-size: .78rem; }
+  .h1-hero-actions .h1-underlined-link { font-size: .68rem; }
   .h1-intro { display: block; padding-top: 82px; padding-bottom: 85px; }
   .h1-intro-index { margin-bottom: 38px; }
   .h1-intro h2,.h1-collection h2,.h1-residence h2,.h1-details h2,.h1-process h2 { font-size: clamp(2.8rem,11vw,4rem); }
+  .h1-intro h2,.h1-collection h2,.h1-residence h2,.h1-details h2,.h1-process h2 { line-height: 1.02; }
   .h1-intro-aside { max-width: 400px; margin: 25px 0 0 auto; }
   .h1-collection-head { display: block; margin-bottom: 35px; }
   .h1-collection-head > p { margin: 20px 0 0; }
   .h1-collection-layout { grid-template-columns: 1fr; gap: 16px; }
-  .h1-area-tabs button { padding-top: 17px; padding-bottom: 17px; }
+  .h1-area-tabs button { min-height: 66px; padding-top: 15px; padding-bottom: 15px; }
   .h1-area-detail { min-height: 0; padding: 22px 0 8px; }
-  .h1-collection-visual { min-height: 450px; }
+  .h1-area-detail p { font-size: .8rem; }
+  .h1-collection-visual { min-height: min(112vw,410px); }
   .h1-residence { grid-template-columns: 1fr; }
-  .h1-residence-image { min-height: 430px; }
+  .h1-residence-image { min-height: min(112vw,410px); }
   .h1-residence-copy { padding: 70px var(--h1-gutter) 82px; }
   .h1-details-head { display: block; }
   .h1-details-head > p { margin-top: 20px; }
-  .h1-detail-grid { grid-template-columns: 1fr; grid-template-rows: 390px 280px 280px; gap: 12px; }
+  .h1-detail-grid { grid-template-columns: 1fr; grid-template-rows: min(92vw,340px) repeat(2,min(70vw,260px)); gap: 12px; }
   .h1-detail-tall { grid-row: auto; }
-  .h1-philosophy { min-height: 540px; }
-  .h1-philosophy-stamp { top: 24px; right: 22px; width: 76px; height: 76px; font-size: .49rem; }
+  .h1-philosophy { min-height: 500px; padding: 105px 24px 70px; }
+  .h1-philosophy h2 { font-size: clamp(2.65rem,10vw,3.8rem); }
+  .h1-philosophy > p { max-width: 430px; font-size: .78rem; }
+  .h1-philosophy-stamp { top: 18px; right: 18px; width: 68px; height: 68px; font-size: .44rem; }
   .h1-process { grid-template-columns: 1fr; gap: 28px; }
-  .h1-final { min-height: 520px; }
-  .h1-final h2 { font-size: clamp(3.1rem,12vw,4.4rem); }
+  .h1-process-list article { grid-template-columns: 30px minmax(0,1fr) 18px; gap: 10px; }
+  .h1-final { min-height: 490px; }
+  .h1-final h2 { font-size: clamp(2.9rem,11vw,4.2rem); }
+  .h1-final-copy { padding: 75px 24px; }
+  .h1-final-copy > p { line-height: 1.65; }
+  .h1-final-copy .btn { max-width: 100%; padding: .8rem 1rem; font-size: .76rem; }
+  .h1-final-mark { bottom: 18px; font-size: .5rem; }
+  .h1-image-caption { inset-inline: 16px; bottom: 16px; font-size: .49rem; }
 }
 @media (prefers-reduced-motion: reduce) {
   .h1-floating-leaf { animation: none; }
@@ -218,4 +232,16 @@ html[dir="rtl"] .home1 .h1-hero-index { inset-inline-end: auto; inset-inline-sta
 @media (max-width: 680px) {
   html[dir="rtl"] .home1 .h1-hero-index { inset-inline-start: 20px; }
   html[dir="rtl"] .home1 .h1-area-detail { padding-inline-end: 0; }
+}
+@media (max-width: 380px) {
+  .home1 { --h1-gutter: 20px; }
+  .h1-hero-content { padding-top: 76px; padding-bottom: 132px; }
+  .h1-hero h1 { font-size: clamp(2.65rem,12vw,3.5rem); }
+  .h1-hero-actions { align-items: flex-start; flex-direction: column; gap: 14px; }
+  .h1-hero-bottom { left: 20px; right: 20px; }
+  .h1-intro h2,.h1-collection h2,.h1-residence h2,.h1-details h2,.h1-process h2 { font-size: 2.65rem; }
+  .h1-area-tabs button { grid-template-columns: 28px minmax(0,1fr) 18px; gap: 9px; }
+  .h1-area-tabs button strong { font-size: .82rem; }
+  .h1-area-tabs button small { font-size: .64rem; }
+  .h1-image-caption { letter-spacing: .08em; }
 }
