@@ -168,6 +168,7 @@ function initNavigationDestinations() {
     else if (!before && !link.isConnected) nav.append(link);
   };
   ensureLink('Home 2', 'premium.html', 'About');
+  ensureLink('Blog', 'blog.html', 'Pricing');
   ensureLink('Products', 'products.html', 'Pricing');
 
   setActiveNav();
@@ -406,7 +407,9 @@ function initServiceDetail() {
       tags: ['Landscape design', 'Plant styling', 'Outdoor flow'],
       description: 'We shape outdoor living spaces that feel calm, lush, and beautifully tailored to the way you live. Our landscape plans balance structure, seasonal blooms, and practical functionality for a polished garden environment.',
       benefits: ['Improved curb appeal', 'Low-maintenance planting plans', 'Balanced outdoor zoning'],
-      process: ['Site assessment', 'Concept layouts', 'Planting and hardscape installation', 'Final styling']
+      process: ['Site assessment', 'Concept layouts', 'Planting and hardscape installation', 'Final styling'],
+      price: '$1,290',
+      priceBasis: 'Per project'
     },
     'lawn-installation': {
       title: 'Lawn Installation',
@@ -415,7 +418,9 @@ function initServiceDetail() {
       tags: ['Grass selection', 'Ground prep', 'Irrigation'],
       description: 'From soil preparation to final turf laydown, we install healthy lawns that suit your sunlight, traffic, and climate conditions.',
       benefits: ['Dense green finish', 'Healthy root development', 'Efficient water use'],
-      process: ['Soil prep', 'Lawn grading', 'Seed or turf install', 'Care guidance']
+      process: ['Soil prep', 'Lawn grading', 'Seed or turf install', 'Care guidance'],
+      price: '$850',
+      priceBasis: 'Per project'
     },
     'lawn-maintenance': {
       title: 'Lawn Maintenance',
@@ -424,7 +429,9 @@ function initServiceDetail() {
       tags: ['Seasonal visits', 'Mowing', 'Fertilization'],
       description: 'Routine care keeps your lawn resilient, even, and vibrant throughout the seasons while reducing stress on plants and soil.',
       benefits: ['Year-round health', 'Consistent presentation', 'Weed and pest monitoring'],
-      process: ['Inspection', 'Mowing and trimming', 'Feeding and treatment', 'Seasonal updates']
+      process: ['Inspection', 'Mowing and trimming', 'Feeding and treatment', 'Seasonal updates'],
+      price: '$499',
+      priceBasis: 'Per month'
     },
     'garden-design': {
       title: 'Garden Design',
@@ -433,7 +440,9 @@ function initServiceDetail() {
       tags: ['Creative layout', 'Seasonal planting', 'Outdoor styling'],
       description: 'Our design studio reimagines gardens as immersive landscapes built around color, form, texture, and how each space will be experienced.',
       benefits: ['Unique garden personality', 'Seasonal visual rhythm', 'Functional outdoor zones'],
-      process: ['Discovery', 'Concept deck', 'Refinement', 'Install and styling']
+      process: ['Discovery', 'Concept deck', 'Refinement', 'Install and styling'],
+      price: '$2,900',
+      priceBasis: 'Per project'
     },
     'tree-shrub-care': {
       title: 'Plant Care & Pruning',
@@ -442,7 +451,9 @@ function initServiceDetail() {
       tags: ['Plant health', 'Pruning', 'Seasonal care'],
       description: 'Expert plant-health care and considered pruning preserve structure, encourage healthy growth and help garden beds, shrubs and established trees thrive in their setting.',
       benefits: ['Healthier growth and flowering', 'Safer, well-shaped trees and shrubs', 'Early identification of plant stress'],
-      process: ['Site and plant assessment', 'Care recommendations', 'Pruning and targeted treatment', 'Aftercare notes']
+      process: ['Site and plant assessment', 'Care recommendations', 'Pruning and targeted treatment', 'Aftercare notes'],
+      price: '$180',
+      priceBasis: 'Per visit'
     },
     'irrigation-installation': {
       title: 'Irrigation Installation',
@@ -451,7 +462,9 @@ function initServiceDetail() {
       tags: ['Water efficiency', 'Smart zones', 'System setup'],
       description: 'We plan and install irrigation around your planting, soil and site conditions so water reaches the right places with less waste.',
       benefits: ['Consistent watering across zones', 'Reduced runoff and overspray', 'Straightforward seasonal controls'],
-      process: ['Water-use and site review', 'Zone and equipment plan', 'Installation and calibration', 'Owner walkthrough']
+      process: ['Water-use and site review', 'Zone and equipment plan', 'Installation and calibration', 'Owner walkthrough'],
+      price: '$950',
+      priceBasis: 'Per project'
     },
     'garden-cleaning': {
       title: 'Garden Cleaning',
@@ -460,7 +473,9 @@ function initServiceDetail() {
       tags: ['Seasonal refresh', 'Pruning', 'Debris clearing'],
       description: 'A considered garden refresh clears seasonal debris, tidies edges and brings existing planting back into focus without losing its character.',
       benefits: ['A cleaner, more welcoming garden', 'Clearer paths and healthy beds', 'Practical seasonal maintenance'],
-      process: ['Walkthrough and priorities', 'Pruning and bed care', 'Path and surface clearing', 'Green-waste tidy-up']
+      process: ['Walkthrough and priorities', 'Pruning and bed care', 'Path and surface clearing', 'Green-waste tidy-up'],
+      price: '$220',
+      priceBasis: 'Per visit'
     },
     'outdoor-lighting': {
       title: 'Outdoor Lighting',
@@ -469,7 +484,9 @@ function initServiceDetail() {
       tags: ['Path lighting', 'Feature lighting', 'Energy efficient'],
       description: 'A restrained lighting plan adds safety and atmosphere while drawing attention to the forms, paths and gathering places that make your garden yours.',
       benefits: ['Safer evening circulation', 'Emphasis on garden character', 'Efficient, durable fixtures'],
-      process: ['Night-use and safety review', 'Lighting concept and fixture choice', 'Installation and aiming', 'Evening commissioning']
+      process: ['Night-use and safety review', 'Lighting concept and fixture choice', 'Installation and aiming', 'Evening commissioning'],
+      price: '$1,100',
+      priceBasis: 'Per project'
     },
     'seasonal-planting': {
       title: 'Seasonal Planting',
@@ -478,7 +495,9 @@ function initServiceDetail() {
       tags: ['Seasonal color', 'Plant selection', 'Bed preparation'],
       description: 'Seasonal planting brings fresh color and texture while respecting your garden’s existing palette, growing conditions and long-term maintenance needs.',
       benefits: ['Color and interest through the seasons', 'Plant choices suited to the site', 'Better continuity with established beds'],
-      process: ['Season and site review', 'Plant palette selection', 'Bed preparation and planting', 'Watering and care guidance']
+      process: ['Season and site review', 'Plant palette selection', 'Bed preparation and planting', 'Watering and care guidance'],
+      price: '$260',
+      priceBasis: 'Per visit'
     },
     'hardscaping-pathways': {
       title: 'Hardscaping & Pathways',
@@ -487,7 +506,9 @@ function initServiceDetail() {
       tags: ['Natural stone', 'Pathways', 'Outdoor structure'],
       description: 'Durable paths and gathering surfaces bring order to a landscape, connect key spaces and provide a lasting counterpoint to planting.',
       benefits: ['Clear, comfortable circulation', 'Long-lasting and well-drained surfaces', 'Materials integrated with the garden'],
-      process: ['Site measurements and levels', 'Material and layout selection', 'Base preparation and installation', 'Jointing and final inspection']
+      process: ['Site measurements and levels', 'Material and layout selection', 'Base preparation and installation', 'Jointing and final inspection'],
+      price: '$1,800',
+      priceBasis: 'Per project'
     }
   };
 
@@ -500,6 +521,34 @@ function initServiceDetail() {
   document.getElementById('detail-tags').innerHTML = service.tags.map((tag) => `<span class="meta-pill">${tag}</span>`).join('');
   document.getElementById('detail-benefits').innerHTML = service.benefits.map((item) => `<li>${item}</li>`).join('');
   document.getElementById('detail-process').innerHTML = service.process.map((step) => `<li>${step}</li>`).join('');
+  const pricing = document.getElementById('detail-pricing');
+  if (pricing) {
+    const row = document.createElement('tr');
+    [service.title, service.price, service.priceBasis].forEach((value) => {
+      const cell = document.createElement('td');
+      cell.textContent = value;
+      row.append(cell);
+    });
+    pricing.replaceChildren(row);
+  }
+  const faq = document.getElementById('detail-faq');
+  if (faq) {
+    const questions = [
+      ['What is included?', `${service.description} The final scope is agreed after we review your site and priorities.`],
+      ['How long does it take?', `A typical ${service.title.toLowerCase()} service takes ${service.duration}. Site conditions and project size can affect timing.`],
+      ['Can I get a tailored estimate?', 'Yes. Send us your site details and preferred visit time through the contact form for a project-specific discussion.']
+    ];
+    faq.replaceChildren(...questions.map(([question, answer]) => {
+      const item = document.createElement('details');
+      item.className = 'faq-item';
+      const summary = document.createElement('summary');
+      summary.textContent = question;
+      const paragraph = document.createElement('p');
+      paragraph.textContent = answer;
+      item.append(summary, paragraph);
+      return item;
+    }));
+  }
 }
 
 function initFooterYear() {

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Studio Admin Demo | VERDANT</title>
+    <meta name="description" content="A sample, frontend-only VERDANT studio administration dashboard." />
+    <meta name="robots" content="noindex,nofollow" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="admin.css" />
+  </head>
+  <body data-theme="light" class="admin-page">
+    <header class="site-header">
+      <div class="nav-wrap">
+        <a class="brand" href="index.html" aria-label="VERDANT home"><span class="logo-mark" aria-hidden="true"></span><span class="brand-text"><strong>VERDANT</strong><span>Studio admin demo</span></span></a>
+        <nav class="nav-links" aria-label="Main navigation"><a href="index.html">Public site</a><a href="services.html">Services</a><a href="blog.html">Journal</a><a href="contact.html">Contact</a></nav>
+        <div class="nav-actions"><button id="theme-toggle" class="icon-btn" type="button" aria-label="Toggle theme">🌙</button><button id="dir-toggle" class="icon-btn" type="button" aria-label="Toggle RTL">RTL</button><button class="mobile-toggle icon-btn" type="button" aria-label="Open menu">☰</button><a class="btn btn-primary" href="index.html">Back to site</a></div>
+      </div>
+    </header>
+    <main class="admin-main">
+      <div class="container">
+        <div class="admin-title-row"><div><span class="kicker">VERDANT workspace</span><h1>Studio overview</h1><p>Sample dashboard interface · demo data only</p></div><span class="demo-badge">Frontend demo</span></div>
+        <div class="admin-notice" role="note"><strong>Demo only.</strong> The figures and records below are illustrative. This page has no authentication, backend, or live business data.</div>
+        <section class="admin-metrics" aria-label="Sample studio metrics">
+          <article class="admin-metric"><span>Revenue this month</span><strong>$24,860</strong><small>Sample figure</small></article>
+          <article class="admin-metric"><span>Active projects</span><strong>18</strong><small>Sample figure</small></article>
+          <article class="admin-metric"><span>New inquiries</span><strong>32</strong><small>Sample figure</small></article>
+          <article class="admin-metric"><span>Open orders</span><strong>7</strong><small>Sample figure</small></article>
+        </section>
+        <section class="admin-panel analytics-panel" aria-labelledby="analytics-heading">
+          <div class="admin-panel-heading"><div><h2 id="analytics-heading">Analytics</h2><p>Illustrative monthly activity</p></div><span class="admin-period">Last 6 months</span></div>
+          <div class="admin-chart" role="img" aria-label="Sample monthly revenue chart from January to June">
+            <div class="chart-bars"><span style="--bar-height: 42%"></span><span style="--bar-height: 58%"></span><span style="--bar-height: 49%"></span><span style="--bar-height: 72%"></span><span style="--bar-height: 65%"></span><span style="--bar-height: 88%"></span></div>
+            <div class="chart-months" aria-hidden="true"><span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>May</span><span>Jun</span></div>
+          </div>
+        </section>
+        <section class="admin-panel records-panel" aria-label="Studio records">
+          <div class="admin-panel-heading records-heading"><div><h2 id="records-heading">Users</h2><p id="records-description">Sample client and team records</p></div><label class="admin-search"><span class="sr-only">Search records</span><input id="admin-search" type="search" placeholder="Search records" autocomplete="off" /></label></div>
+          <div class="admin-tabs" role="group" aria-label="Dashboard sections">
+            <button type="button" id="tab-analytics" aria-pressed="false" data-view="analytics">Analytics</button>
+            <button type="button" id="tab-users" aria-pressed="true" data-view="users">Users</button>
+            <button type="button" id="tab-orders" aria-pressed="false" data-view="orders">Orders</button>
+            <button type="button" id="tab-messages" aria-pressed="false" data-view="messages">Messages</button>
+          </div>
+          <div class="admin-table-wrap" id="panel-users" role="tabpanel" aria-labelledby="tab-users">
+            <table class="admin-table"><thead><tr><th scope="col">Name</th><th scope="col">Email</th><th scope="col">Type</th><th scope="col">Status</th></tr></thead><tbody>
+              <tr><td>Olivia Carter</td><td>olivia@example.test</td><td>Client</td><td><span class="status-pill">Active</span></td></tr>
+              <tr><td>Marcus Lee</td><td>marcus@example.test</td><td>Client</td><td><span class="status-pill">Active</span></td></tr>
+              <tr><td>Priya Shah</td><td>priya@example.test</td><td>Team</td><td><span class="status-pill">Active</span></td></tr>
+              <tr><td>Sam Rivera</td><td>sam@example.test</td><td>Client</td><td><span class="status-pill status-pending">Invited</span></td></tr>
+            </tbody></table>
+          </div>
+          <div class="admin-table-wrap" id="panel-orders" role="tabpanel" aria-labelledby="tab-orders" hidden>
+            <table class="admin-table"><thead><tr><th scope="col">Order</th><th scope="col">Client</th><th scope="col">Service</th><th scope="col">Status</th><th scope="col">Sample total</th></tr></thead><tbody>
+              <tr><td>VS-1048</td><td>Olivia Carter</td><td>Garden design</td><td><span class="status-pill">In progress</span></td><td>$4,200</td></tr>
+              <tr><td>VS-1047</td><td>Marcus Lee</td><td>Lawn care</td><td><span class="status-pill">Scheduled</span></td><td>$620</td></tr>
+              <tr><td>VS-1046</td><td>Sam Rivera</td><td>Plant care</td><td><span class="status-pill status-pending">Awaiting review</span></td><td>$290</td></tr>
+              <tr><td>VS-1045</td><td>Olivia Carter</td><td>Landscape lighting</td><td><span class="status-pill">Complete</span></td><td>$1,850</td></tr>
+            </tbody></table>
+          </div>
+          <div class="admin-table-wrap" id="panel-messages" role="tabpanel" aria-labelledby="tab-messages" hidden>
+            <table class="admin-table"><thead><tr><th scope="col">From</th><th scope="col">Subject</th><th scope="col">Received</th><th scope="col">Status</th></tr></thead><tbody>
+              <tr><td>Olivia Carter</td><td>Courtyard planting update</td><td>Today</td><td><span class="status-pill status-pending">Unread</span></td></tr>
+              <tr><td>Marcus Lee</td><td>Site visit availability</td><td>Yesterday</td><td><span class="status-pill">Replied</span></td></tr>
+              <tr><td>Sam Rivera</td><td>Seasonal garden maintenance</td><td>Jun 14</td><td><span class="status-pill status-pending">Unread</span></td></tr>
+              <tr><td>Priya Shah</td><td>Project handover notes</td><td>Jun 12</td><td><span class="status-pill">Replied</span></td></tr>
+            </tbody></table>
+          </div>
+          <p class="admin-no-results" id="admin-no-results" hidden>No matching records.</p>
+        </section>
+      </div>
+    </main>
+    <footer class="site-footer"><div class="container"><div class="footer-bottom"><span>VERDANT Studio Admin Demo</span><span><a href="index.html">Return to public site</a></span></div></div></footer>
+    <script src="script.js"></script><script src="admin.js"></script>
+  </body>
+</html>

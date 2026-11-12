@@ -1,0 +1,6 @@
+.utility-main { display: grid; min-height: 67vh; place-items: center; padding: 55px 20px; background: var(--bg); }
+.utility-card { width: min(760px,100%); padding: clamp(28px,6vw,68px); border: 1px solid var(--border); border-radius: 26px; background: var(--surface); text-align: center; box-shadow: 0 18px 52px rgba(20,30,21,.06); }
+.utility-code { display: block; margin-bottom: 14px; color: var(--accent); font-family: var(--font-display); font-size: clamp(3rem,12vw,7.5rem); font-weight: 700; line-height: 1; letter-spacing: -.08em; }
+.utility-card h1 { margin: 12px auto; font-size: clamp(2rem,5vw,3.5rem); line-height: 1.08; }
+.utility-card p { max-width: 520px; margin: 0 auto; font-size: .9rem; line-height: 1.8; }
+.utility-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 24px; }

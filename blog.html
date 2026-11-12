@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Garden Journal | VERDANT</title>
+    <meta name="description" content="Read practical, season-aware advice on garden design, lawn care, planting and sustainable landscapes from VERDANT." />
+    <meta name="robots" content="index,follow" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="blog.css" />
+  </head>
+  <body data-theme="light">
+    <header class="site-header">
+      <div class="nav-wrap">
+        <a class="brand" href="index.html" aria-label="VERDANT home"><span class="logo-mark" aria-hidden="true"></span><span class="brand-text"><strong>VERDANT</strong><span>Garden &amp; Landscape Studio</span></span></a>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="index.html">Home</a><a href="premium.html">Home 2</a><a href="about.html">About</a><a href="services.html">Services</a><a href="projects.html">Projects</a><a href="pricing.html">Pricing</a><a href="blog.html" aria-current="page">Blog</a><a href="contact.html">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <button id="theme-toggle" class="icon-btn" type="button" aria-label="Toggle theme">🌙</button><button id="dir-toggle" class="icon-btn" type="button" aria-label="Toggle RTL">RTL</button><button class="mobile-toggle icon-btn" type="button" aria-label="Open menu">☰</button><a class="btn btn-primary" href="contact.html">Book a Consultation</a><a class="btn btn-secondary" href="auth/login.html">Login</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="page-hero">
+        <div class="shell">
+          <div><span class="kicker">The VERDANT journal</span><h1>Ideas for gardens that grow more beautiful with time.</h1><p>Seasonal notes, practical guidance and thoughtful perspectives from our landscape and horticulture team.</p></div>
+          <div class="image-frame"><img src="https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&amp;fit=crop&amp;w=1200&amp;q=85" alt="Green leaves in a sunlit garden" /></div>
+        </div>
+      </section>
+      <section class="section blog-section">
+        <div class="container">
+          <div class="blog-tools">
+            <label class="blog-search"><span>Search articles</span><input id="blog-search" type="search" placeholder="Search garden topics" autocomplete="off" /></label>
+            <div class="blog-filters" role="group" aria-label="Filter articles by topic">
+              <button type="button" class="blog-filter is-active" data-category="all" aria-pressed="true">All articles</button>
+              <button type="button" class="blog-filter" data-category="design" aria-pressed="false">Garden design</button>
+              <button type="button" class="blog-filter" data-category="lawn-care" aria-pressed="false">Lawn care</button>
+              <button type="button" class="blog-filter" data-category="planting" aria-pressed="false">Planting</button>
+              <button type="button" class="blog-filter" data-category="sustainability" aria-pressed="false">Sustainability</button>
+            </div>
+          </div>
+          <p class="blog-result-count" id="blog-result-count" aria-live="polite"></p>
+          <div class="blog-grid" id="blog-grid">
+            <article class="blog-card" data-category="design" data-search="small garden design make a compact courtyard feel more spacious">
+              <a class="blog-card-image" href="blog-post.html?article=small-gardens"><img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="Compact courtyard garden with considered planting" loading="lazy" /></a>
+              <div class="blog-card-copy"><span class="blog-category">Garden design</span><p class="blog-meta">DESIGN NOTES · 6 MIN READ</p><h2><a href="blog-post.html?article=small-gardens">Make a small garden feel more spacious</a></h2><p>Use sightlines, layered planting and clear transitions to make a compact outdoor room feel generous.</p><a class="blog-read-link" href="blog-post.html?article=small-gardens">Read article <span aria-hidden="true">↗</span></a></div>
+            </article>
+            <article class="blog-card" data-category="lawn-care" data-search="lawn care seasonal calendar healthy grass mowing">
+              <a class="blog-card-image" href="blog-post.html?article=lawn-calendar"><img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="Healthy lawn bordered by garden planting" loading="lazy" /></a>
+              <div class="blog-card-copy"><span class="blog-category">Lawn care</span><p class="blog-meta">SEASONAL CARE · 5 MIN READ</p><h2><a href="blog-post.html?article=lawn-calendar">A calmer, season-by-season lawn care calendar</a></h2><p>Match mowing, feeding and watering to the season instead of asking the lawn to look the same all year.</p><a class="blog-read-link" href="blog-post.html?article=lawn-calendar">Read article <span aria-hidden="true">↗</span></a></div>
+            </article>
+            <article class="blog-card" data-category="planting" data-search="planting choose plants light soil garden right plant right place">
+              <a class="blog-card-image" href="blog-post.html?article=right-plant"><img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="Seasonal flowers growing among green leaves" loading="lazy" /></a>
+              <div class="blog-card-copy"><span class="blog-category">Planting</span><p class="blog-meta">HORTICULTURE · 7 MIN READ</p><h2><a href="blog-post.html?article=right-plant">The right plant in the right place</a></h2><p>Start with light, soil and water before choosing plants, and the garden will reward you with easier care.</p><a class="blog-read-link" href="blog-post.html?article=right-plant">Read article <span aria-hidden="true">↗</span></a></div>
+            </article>
+            <article class="blog-card" data-category="sustainability" data-search="sustainable garden water smart rainwater soil native planting">
+              <a class="blog-card-image" href="blog-post.html?article=water-wise"><img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="Shaded garden path through mature trees" loading="lazy" /></a>
+              <div class="blog-card-copy"><span class="blog-category">Sustainability</span><p class="blog-meta">GARDEN PRACTICE · 6 MIN READ</p><h2><a href="blog-post.html?article=water-wise">A more water-wise garden starts with the soil</a></h2><p>Build soil health, direct water where it matters and choose planting that suits the conditions you have.</p><a class="blog-read-link" href="blog-post.html?article=water-wise">Read article <span aria-hidden="true">↗</span></a></div>
+            </article>
+          </div>
+          <div class="blog-empty" id="blog-empty" hidden><h2>No articles match that search.</h2><p>Try another phrase or choose a different topic.</p><button class="btn btn-secondary" id="blog-clear" type="button">Clear filters</button></div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer"><div class="container"><div class="footer-bottom"><span>© <span id="year"></span> VERDANT Studio</span><span>Thoughtful notes for a greener life</span></div></div></footer>
+    <script src="script.js"></script><script src="blog.js"></script>
+  </body>
+</html>

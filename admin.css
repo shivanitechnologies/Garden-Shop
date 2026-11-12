@@ -1,0 +1,46 @@
+.admin-main { min-height: 70vh; padding: 48px 0 84px; background: var(--bg); }
+.admin-title-row,.admin-panel-heading { display: flex; justify-content: space-between; align-items: flex-start; gap: 20px; }
+.admin-title-row h1 { margin: 5px 0; font-size: clamp(2.2rem,4vw,3.8rem); }
+.admin-title-row p,.admin-panel-heading p { margin: 0; font-size: .82rem; }
+.demo-badge,.admin-period { display: inline-flex; align-items: center; padding: 8px 12px; border: 1px solid var(--border); border-radius: 999px; background: var(--surface); color: var(--accent); font-size: .7rem; font-weight: 800; }
+.admin-notice { margin: 24px 0; padding: 14px 18px; border: 1px solid rgba(151,111,52,.28); border-radius: 12px; background: rgba(215,178,116,.13); color: var(--text); font-size: .78rem; line-height: 1.65; }
+.admin-metrics { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 14px; margin-bottom: 18px; }
+.admin-metric,.admin-panel { border: 1px solid var(--border); border-radius: 18px; background: var(--surface); box-shadow: 0 12px 30px rgba(20,30,21,.04); }
+.admin-metric { display: grid; gap: 8px; padding: 20px; }
+.admin-metric > span { font-size: .75rem; font-weight: 700; }
+.admin-metric strong { font-family: var(--font-display); font-size: 1.85rem; }
+.admin-metric small { color: var(--muted); font-size: .66rem; }
+.admin-panel { margin-top: 18px; padding: clamp(16px,3vw,26px); }
+.admin-panel-heading { align-items: center; }
+.admin-panel-heading h2 { margin: 0 0 5px; font-size: 1.5rem; }
+.admin-chart { height: 190px; margin-top: 20px; padding: 14px 6px 0; border-bottom: 1px solid var(--border); background: repeating-linear-gradient(to bottom,transparent 0,transparent 46px,var(--border) 47px,var(--border) 48px); }
+.chart-bars { display: flex; height: 100%; align-items: end; justify-content: space-around; gap: 12px; }
+.chart-bars span { width: min(8%,48px); height: var(--bar-height); border-radius: 8px 8px 0 0; background: linear-gradient(180deg,var(--accent),#8d9d6d); }
+.chart-months { display: grid; grid-template-columns: repeat(6,1fr); gap: 12px; margin-top: 8px; color: var(--muted); font-size: .67rem; text-align: center; }
+.admin-tabs { display: flex; gap: 6px; margin: 22px 0 14px; padding: 5px; border-radius: 12px; background: var(--bg-alt); }
+.admin-tabs button { min-height: 38px; padding: 0 15px; border: 0; border-radius: 9px; background: transparent; color: var(--muted); font: inherit; font-size: .75rem; font-weight: 800; cursor: pointer; }
+.admin-tabs button[aria-pressed="true"] { background: var(--surface); color: var(--accent); box-shadow: 0 2px 8px rgba(20,30,21,.08); }
+.admin-search input { width: min(250px,40vw); min-height: 40px; padding: 0 12px; border: 1px solid var(--border); border-radius: 10px; background: var(--surface); color: var(--text); }
+.admin-table-wrap { width: 100%; overflow-x: auto; }
+.admin-table { width: 100%; border-collapse: collapse; text-align: left; }
+.admin-table th,.admin-table td { padding: 13px 10px; border-bottom: 1px solid var(--border); font-size: .75rem; white-space: nowrap; }
+.admin-table th { color: var(--muted); font-size: .67rem; letter-spacing: .05em; text-transform: uppercase; }
+.admin-table tr:last-child td { border-bottom: 0; }
+.admin-table [hidden] { display: none; }
+.status-pill { display: inline-flex; padding: 5px 9px; border-radius: 999px; background: rgba(75,105,66,.12); color: var(--accent); font-size: .64rem; font-weight: 800; }
+.status-pending { background: rgba(151,111,52,.13); color: #966c2e; }
+.admin-no-results { margin: 18px 0 4px; color: var(--muted); font-size: .8rem; }
+.admin-page .site-footer a { color: inherit; }
+@media (max-width: 760px) {
+  .admin-main { padding-top: 30px; }
+  .admin-metrics { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .records-heading { align-items: flex-start; flex-direction: column; }
+  .admin-search,.admin-search input { width: 100%; }
+}
+@media (max-width: 460px) {
+  .admin-title-row { flex-direction: column; }
+  .admin-metric { padding: 15px; }
+  .admin-metric strong { font-size: 1.55rem; }
+  .admin-tabs { overflow-x: auto; }
+  .admin-tabs button { padding: 0 12px; }
+}
